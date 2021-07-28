@@ -32,10 +32,22 @@ h1 {
     }
 }
 
+@include tablet {
+    h1 span::after {
+        right: -100px;
+    }
+}
+
+@include desktop {
+    h1 span::after {
+        right: -145px !important;
+        top: 80px !important;
+    }
+}
+
 // /////
 .hero-area-bottom {
     margin-top: -175px;
-    padding-bottom: 120px;
 }
 
 .slider-item {
@@ -112,10 +124,121 @@ h1 {
 
 }
 
-// //////
-#categories {
-    padding-bottom: 120px;
+@include mobile {
+    .text {
+        ul {
+            li {
+                margin-top: 20px;
+                margin-right: 3px;
+                padding-right: 4px;
+                font-size: 12px;
+
+            }
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50px);
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            button {
+                font-size: 0;
+                background: $secondery-color;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 0;
+            }
+        }
+
+        .slick-active button {
+            background: $secondery-color;
+        }
+    }
 }
+
+@include tablet {
+    .slick-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50px);
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+
+            button {
+                font-size: 0;
+                background: $secondery-color;
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                border: 0;
+            }
+        }
+
+        .slick-active button {
+            background: $secondery-color;
+        }
+    }
+}
+
+@include desktop {
+    .left-arrow {
+        left: -25px;
+
+    }
+    .right-arrow {
+        right: -98.2%;
+    }
+
+    .text {
+        ul {
+            li {
+                margin-top: 25px;
+                margin-right: 4px;
+                padding-right: 6px;
+
+            }
+        }
+    }
+}
+@include desktop-lg {
+    .left-arrow {
+      
+            left: -20px;
+            top: 34%;
+            
+        
+
+    }
+    .right-arrow {
+        top: 34%;
+        right: -98.2%;
+    }
+
+    .text {
+        ul {
+            li {
+                margin-top: 20px;
+                margin-right: 3px;
+                padding-right: 4px;
+                font-size: 12px;
+
+            }
+        }
+    }
+}
+
+// //////
+// #categories {
+//     padding-bottom: 120px;
+// }
 
 .catagory-item {
     background: $white;
@@ -263,5 +386,11 @@ footer {
             }
         }
 
+    }
+}
+
+@include mobile {
+    section {
+        padding-bottom: 60px;
     }
 }

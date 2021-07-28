@@ -45,6 +45,25 @@ h1,
     }
 }
 
+@include tablet{
+    h1, .h1 {
+        font-size: 44px;
+        line-height: 58px;
+    }
+}
+@include desktop{
+    h1, .h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+@include  desktop-lg{
+    h1, .h1 {
+        font-size: 43px;
+        line-height: 50px;
+    }
+}
+
 h2,
 .h2 {
     font-size: 26px;
@@ -61,7 +80,24 @@ h3,
     font-weight: 400;
 
 }
-
+@include mobile{
+    h3, .h3 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+}
+@include desktop{
+    h3, .h3 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+}
+@include desktop-lg{
+    h3, .h3 {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}
 h4,
 .h4 {
     font-size: 20px;

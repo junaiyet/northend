@@ -9,10 +9,33 @@ $('.hero-area-bottom-slider').slick({
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 576,
+        breakpoint: 991.98,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768.98,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots:true,
+          arrows:false,
+
+
+        }
+      },
+      {
+        breakpoint: 575.98,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots:true,
+          arrows:false,
+
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -21,7 +44,7 @@ $('.hero-area-bottom-slider').slick({
     ]
 });
 $(window).scroll(function(){
-  if($(window).scrollTop() > 100){
+  if($(window).scrollTop() > 50){
     $(".menu").addClass("fixd-manu")
   }else{
     $(".menu").removeClass("fixd-manu")
