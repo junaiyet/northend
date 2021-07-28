@@ -586,5 +586,28 @@ footer {
 @media (max-width: 575.98px) {
   section {
     padding-bottom: 60px; } }
+.about-hero-area {
+  background-color: #F6F6F6;
+  padding: 30px 0 366px 0;
+  position: relative;
+  z-index: -2;
+  margin-bottom: 500px; }
+  .about-hero-area .shap {
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: rotateX(-9deg);
+            transform: rotateX(-9deg);
+    top: -50px; }
+  .about-hero-area .img img {
+    display: block; }
+  .about-hero-area .hero-area-text h1 {
+    font-size: 48px; }
+    .about-hero-area .hero-area-text h1 span {
+      font-weight: 700; }
+      .about-hero-area .hero-area-text h1 span::after {
+        display: none; }
 
+.about-hero {
+  position: absolute;
+  top: 85px; }
 /*# sourceMappingURL=style.css.map */

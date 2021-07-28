@@ -1,0 +1,39 @@
+.about-hero-area {
+    background-color: $primary-color;
+    padding: 30px 0 366px 0;
+    position: relative;
+    z-index: -2;
+    margin-bottom: 500px;
+
+    .shap {
+        position: absolute;
+        z-index: -1;
+        transform: rotateX(-9deg);
+        top: -50px;
+    }
+   .img{
+       img{
+           display: block;
+       }
+   }
+    .hero-area-text {
+
+        h1 {
+            font-size: 48px;
+
+            span {
+                font-weight: 700;
+
+                &::after {
+                    display: none;
+
+                }
+            }
+        }
+    }
+
+}
+.about-hero{
+    position: absolute;
+    top: 85px;
+}
