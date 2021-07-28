@@ -70,19 +70,23 @@ h2,
 
 
 }
-
+@include mobile{
+    h2, .h2 {
+        font-size: 20px;
+    }
+}
 
 
 h3,
 .h3 {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 34px;
     font-weight: 400;
 
 }
 @include mobile{
     h3, .h3 {
-        font-size: 19px;
+        font-size: 17px;
         line-height: 27px;
     }
 }

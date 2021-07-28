@@ -44,7 +44,7 @@ $('.hero-area-bottom-slider').slick({
     ]
 });
 $(window).scroll(function(){
-  if($(window).scrollTop() > 50){
+  if($(window).scrollTop() > 0){
     $(".menu").addClass("fixd-manu")
   }else{
     $(".menu").removeClass("fixd-manu")

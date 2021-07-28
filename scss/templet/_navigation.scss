@@ -6,12 +6,17 @@
     padding-bottom: 20px;
 }
 
+.fixd-manu ul li a {
+    padding: 20px 22px !important;
+
+}
 
 
 .navigation {
     position: fixed;
     width: 100%;
     z-index: 9999;
+    transition: .4s;
 
     .search-btn {
         position: relative;
@@ -29,7 +34,7 @@
             }
         }
 
-        .btn{
+        .btn {
             position: absolute;
             top: 0;
             right: 14px;
@@ -58,7 +63,10 @@
     ul {
         li {
             a {
-                padding: 50px 22px !important;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 22px !important;
+                padding-right: 22px !important;
                 color: $tertiary-color !important;
                 font-size: 15px;
                 transition: .4s;
@@ -69,21 +77,25 @@
             }
         }
     }
-
+    .navbar-toggler {
+        margin-top: 15px;
+    }
 }
 
 @include mobile {
+
     .navigation {
         .navber {
             padding: 20px 0 !important;
 
 
             .navbar-toggler {
-                i{
+                i {
 
                     margin-top: 10px !important;
                 }
             }
+
             .navbar-toggler:focus {
 
                 box-shadow: 0;
@@ -113,6 +125,7 @@
         }
     }
 }
+
 @include tablet {
     .navigation {
         .navber {
@@ -120,11 +133,12 @@
 
 
             .navbar-toggler {
-                i{
+                i {
 
                     margin-top: 10px !important;
                 }
             }
+
             .navbar-toggler:focus {
 
                 box-shadow: 0;
@@ -154,6 +168,7 @@
         }
     }
 }
+
 @include desktop {
     .navigation {
         .navber {
@@ -161,11 +176,12 @@
 
 
             .navbar-toggler {
-                i{
+                i {
 
                     margin-top: 10px !important;
                 }
             }
+
             .navbar-toggler:focus {
 
                 box-shadow: 0;
