@@ -20,16 +20,16 @@
 </head>
 
 <body>
-  <header class="navigation">
-    <nav class="navbar navbar-expand-lg ">
+  <header class="navigation ">
+    <nav class="navbar navbar-expand-lg menu">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <i class="fas fa-bars"></i>  
+              </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -49,8 +49,10 @@
             </li>
           </ul>
           <form class="from-area">
-            <input class="form-control me-2" type="search" placeholder="Type And Hit Enter" aria-label="Search">
-            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            <div class="search-btn">
+              <input class="form-control me-2" type="search" placeholder="Type And Hit Enter" aria-label="Search">
+              <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+            </div>
           </form>
         </div>
       </div>

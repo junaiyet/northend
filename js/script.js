@@ -20,3 +20,11 @@ $('.hero-area-bottom-slider').slick({
       // instead of a settings object
     ]
 });
+$(window).scroll(function(){
+  if($(window).scrollTop() > 100){
+    $(".menu").addClass("fixd-manu")
+  }else{
+    $(".menu").removeClass("fixd-manu")
+  }   
+})
+

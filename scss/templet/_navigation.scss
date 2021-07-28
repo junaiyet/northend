@@ -1,9 +1,19 @@
-.navigation {
+.fixd-manu {
+    background-color: $primary-color !important;
+    position: fixed !important;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-        position: absolute;
-        width: 100%;
-    
-    .from-area {
+
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    .search-btn {
         position: relative;
 
         .form-control {
@@ -13,12 +23,13 @@
             transition: border-color .0, box-shadow 0;
             height: 42px;
             color: $input-text-color;
-            &:focus{
+
+            &:focus {
                 box-shadow: none;
             }
         }
 
-        .btn {
+        .btn{
             position: absolute;
             top: 0;
             right: 14px;
@@ -26,17 +37,19 @@
             i {
                 font-size: 13px;
                 position: relative;
-                &::after{
-                width: 0.5px;
-                height: 18px;
-                background: $border-color;
-                position: absolute;
-                left: -15px;
-                top: -3px;
-                content: "";
+
+                &::after {
+                    width: 0.5px;
+                    height: 18px;
+                    background: $border-color;
+                    position: absolute;
+                    left: -15px;
+                    top: -3px;
+                    content: "";
                 }
             }
-            &:focus{
+
+            &:focus {
                 box-shadow: none;
             }
         }
@@ -47,8 +60,138 @@
             a {
                 padding: 50px 22px !important;
                 color: $tertiary-color !important;
+                font-size: 15px;
+                transition: .4s;
+
+                &:hover {
+                    color: $secondery-color !important;
+                }
             }
         }
     }
 
+}
+
+@include mobile {
+    .navigation {
+        .navber {
+            padding: 20px 0 !important;
+
+
+            .navbar-toggler {
+                i{
+
+                    margin-top: 10px !important;
+                }
+            }
+            .navbar-toggler:focus {
+
+                box-shadow: 0;
+            }
+        }
+
+        ul {
+            background: $primary-color !important;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+
+            li {
+                a {
+                    padding: 0px 0px 30px 0 !important;
+                }
+            }
+        }
+
+        .from-area {
+            position: relative;
+            top: -80px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
+@include tablet {
+    .navigation {
+        .navber {
+            padding: 20px 0 !important;
+
+
+            .navbar-toggler {
+                i{
+
+                    margin-top: 10px !important;
+                }
+            }
+            .navbar-toggler:focus {
+
+                box-shadow: 0;
+            }
+        }
+
+        ul {
+            background: $primary-color !important;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+
+            li {
+                a {
+                    padding: 0px 0px 30px 0 !important;
+                }
+            }
+        }
+
+        .from-area {
+            position: relative;
+            top: -80px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    }
+}
+@include desktop {
+    .navigation {
+        .navber {
+            padding: 20px 0 !important;
+
+
+            .navbar-toggler {
+                i{
+
+                    margin-top: 10px !important;
+                }
+            }
+            .navbar-toggler:focus {
+
+                box-shadow: 0;
+            }
+        }
+
+        ul {
+            background: $primary-color !important;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 60px;
+
+
+            li {
+                a {
+                    padding: 0px 0px 30px 0 !important;
+                }
+            }
+        }
+
+        .from-area {
+            position: relative;
+            top: -80px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+    }
 }

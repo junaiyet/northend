@@ -25,6 +25,13 @@ h1 {
     }
 }
 
+@include mobile {
+    h1 span::after {
+        width: 26px;
+        right: -45px;
+    }
+}
+
 // /////
 .hero-area-bottom {
     margin-top: -175px;
@@ -221,6 +228,10 @@ footer {
                 font-size: 15px;
                 font-weight: 700;
                 padding: 0 10px;
+
+                &:hover {
+                    color: $secondery-color !important;
+                }
             }
         }
     }
@@ -241,6 +252,13 @@ footer {
                     justify-content: center;
                     align-items: center;
                     font-size: 18px;
+                    transition: .4s;
+
+                    &:hover {
+                        color: $tertiary-color;
+                        border: 1px solid $tertiary-color !important;
+
+                    }
                 }
             }
         }
