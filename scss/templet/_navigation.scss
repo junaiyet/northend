@@ -1,0 +1,54 @@
+.navigation {
+
+        position: absolute;
+        width: 100%;
+    
+    .from-area {
+        position: relative;
+
+        .form-control {
+            width: 280px;
+            border: 2px solid $border-color;
+            border-radius: 0rem;
+            transition: border-color .0, box-shadow 0;
+            height: 42px;
+            color: $input-text-color;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 0;
+            right: 14px;
+
+            i {
+                font-size: 13px;
+                position: relative;
+                &::after{
+                width: 0.5px;
+                height: 18px;
+                background: $border-color;
+                position: absolute;
+                left: -15px;
+                top: -3px;
+                content: "";
+                }
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+
+    ul {
+        li {
+            a {
+                padding: 50px 22px !important;
+                color: $tertiary-color !important;
+            }
+        }
+    }
+
+}
