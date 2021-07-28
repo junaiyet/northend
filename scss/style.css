@@ -72,7 +72,7 @@ h1,
   font-size: 50px;
   line-height: 65px; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   h1, .h1 {
     font-size: 26px;
     line-height: 40px; } }
@@ -98,7 +98,7 @@ h3,
   line-height: 34px;
   font-weight: 400; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   h3, .h3 {
     font-size: 19px;
     line-height: 27px; } }
@@ -173,7 +173,7 @@ h5,
     .navigation ul li a:hover {
       color: #E8505B !important; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .navigation .navber {
     padding: 20px 0 !important; }
     .navigation .navber .navbar-toggler i {
@@ -272,7 +272,7 @@ h1 span {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   h1 span::after {
     width: 26px;
     right: -45px; } }
@@ -333,7 +333,7 @@ h1 span {
 .left-arrow {
   position: absolute;
   left: -48px;
-  top: 40%;
+  top: 34%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 9;
@@ -342,15 +342,15 @@ h1 span {
 
 .right-arrow {
   position: absolute;
-  right: -101.2%;
-  top: 40%;
+  right: -48px;
+  top: 34%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 9;
   color: #E8505B;
   font-size: 15px; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .text ul li {
     margin-top: 20px;
     margin-right: 3px;
@@ -449,6 +449,14 @@ h1 span {
     .news-text ul li:last-child {
       border: 0; }
 
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .news-text {
+    position: static !important;
+    width: 270px;
+    margin: 115px auto 0 auto; }
+
+  .news-item {
+    margin-bottom: -80px; } }
 .pagination .prevnext {
   width: 100px;
   height: 40px;
@@ -528,7 +536,7 @@ footer {
         color: #222222;
         border: 1px solid #222222 !important; }
 
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   section {
     padding-bottom: 60px; } }
 
