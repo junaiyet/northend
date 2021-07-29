@@ -20,13 +20,9 @@ h1 {
             right: -110px;
             top: 52%;
             transform: translateX(-50%);
-
         }
     }
 }
-
-
-
 
 @include tablet {
     h1 span::after {
@@ -55,7 +51,6 @@ h1 {
     }
 
     .img {
-
         position: relative;
 
     }
@@ -129,7 +124,6 @@ h1 {
                 margin-right: 3px;
                 padding-right: 4px;
                 font-size: 10px;
-
             }
         }
     }
@@ -203,7 +197,6 @@ h1 {
                 margin-right: 4px;
                 padding-right: 6px;
                 font-size: 13px;
-
             }
         }
     }
@@ -227,7 +220,6 @@ h1 {
                 margin-right: 3px;
                 padding-right: 3px;
                 font-size: 12px;
-
             }
         }
     }
@@ -408,7 +400,6 @@ h1 {
     }
 
     .prev {
-
         font-size: 14px;
         margin-right: 5px;
     }
@@ -423,7 +414,6 @@ h1 {
 // ///
 footer {
     background-color: $primary-color !important;
-
 
     .links {
         li {
@@ -476,13 +466,12 @@ footer {
     }
 }
 
-
-
-@include desktop{
+@include desktop {
     footer .socal-icon li a {
         margin-right: 0px;
     }
 }
+
 @include desktop-lg {
     footer .socal-icon li a {
         margin-right: 0px;

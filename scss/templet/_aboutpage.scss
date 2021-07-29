@@ -44,9 +44,70 @@
 }
 
 @include mobile {
-    .about-hero-area .hero-area-text {
-        margin-top: 0px;
+    .about-hero-area {
+        padding: 30px 0 50px 0;
+
+        margin-bottom: 0 !important;
+
+        .hero-area-text {
+            margin-top: 0px;
+        }
     }
+
+    .about-hero {
+        position: static !important;
+        margin-top: 60px;
+    }
+}
+
+@include tablet {
+    .about-hero-area {
+        padding: 30px 0 50px 0;
+
+        margin-bottom: 0 !important;
+
+        .hero-area-text {
+            margin-top: 0px;
+        }
+    }
+
+    .about-hero {
+        position: static !important;
+        margin-top: 60px;
+    }
+}
+
+@include desktop {
+    .about-hero-area {
+        padding: 30px 0 50px 0;
+
+        margin-bottom: 0 !important;
+
+        .hero-area-text {
+            margin-top: 0px;
+        }
+    }
+
+    .about-hero {
+        position: static !important;
+        margin-top: 60px;
+    }
+}
+
+@include desktop-lg {
+    .about-hero-area {
+
+        margin-bottom: 345px !important;
+
+        .hero-area-text {
+            margin-top: 140px !important;
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
 }
 
 // ////////////
@@ -56,6 +117,11 @@
     padding: 80px 150px;
     position: relative;
 
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
     .block {
         background-color: $white;
         padding: 25px;
@@ -63,25 +129,39 @@
         text-align: left;
         margin-bottom: 92px;
         width: 350px;
+        position: relative;
 
         h4 {
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid $border-color;
         }
 
         p {
             margin-left: 14px;
 
         }
+
+        span {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #F8E3E4;
+            font-size: 15px;
+            color: $secondery-color;
+            line-height: 36px;
+            text-align: center;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+        }
     }
 
     .line-shap {
-            position: absolute;
-            height: 620px;
-            width: 2px;
-            background: #DEDBDC;
-            left: 50%;
-            top: 23%;
-        
+        position: absolute;
+        height: 620px;
+        width: 2px;
+        background: #DEDBDC;
+        left: 50%;
+        top: 23%;
 
         .radius {
             width: 24px;
@@ -91,15 +171,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
 
-            .radius-meddel {
+            &::after {
+                position: absolute;
+                content: "";
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
                 background: $secondery-color;
             }
-        }
 
+        }
 
         .top {
             position: absolute !important;
@@ -116,8 +199,145 @@
 
         .bottom {
             position: absolute !important;
-            bottom:  -5px;
+            bottom: -5px;
             left: -11px;
         }
+    }
+}
+
+@include mobile {
+    .experiences {
+        padding: 80px 10px 0px 10px;
+        margin-top: 100px;
+
+        .block {
+            margin-bottom: 100px;
+            margin-top: -50px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        .line-shap {
+            display: none;
+        }
+
+        span {
+            bottom: 5px !important;
+        }
+    }
+}
+
+@include tablet {
+    .experiences {
+        padding: 80px 10px 0px 10px;
+        margin-top: 100px;
+
+        .block {
+            width: 100%;
+        }
+
+        .line-shap {
+            display: none;
+        }
+
+    }
+}
+
+@include desktop {
+    .experiences {
+        padding: 80px 10px 0px 10px;
+        margin-top: 100px;
+
+        .block {
+            width: 48%;
+            margin-bottom: 30px;
+        }
+
+        .line-shap {
+            display: none;
+        }
+    }
+}
+
+@include desktop-lg {
+    .experiences {
+        padding: 80px 44px;
+    }
+}
+
+// /////////
+.proposal {
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+///////
+.tools {
+    background: $primary-color;
+    padding: 80px 179px 30px 179px;
+
+    h2 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .tools-icon {
+        padding: 50px 0;
+
+        li {
+            margin-bottom: 50px;
+
+            a {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .tools {
+        background: $primary-color;
+        padding: 80px 10px 0px 10px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@include tablet {
+    .tools {
+        background: $primary-color;
+        padding: 80px 10px 0px 10px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@include desktop {
+    .tools {
+        background: $primary-color;
+        padding: 80px 10px 0px 10px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@include desktop-lg {
+    .tools {
+        background: #F6F6F6;
+        padding: 80px 70px 30px 70px;
     }
 }

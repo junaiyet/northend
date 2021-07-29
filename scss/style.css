@@ -125,6 +125,8 @@ h6,
   font-size: 16px;
   font-weight: 700; }
 
+@media (max-width: 575.98px) {
+  font-size: 14px; }
 .fixd-manu {
   background-color: #F6F6F6 !important;
   position: fixed !important;
@@ -200,7 +202,8 @@ h6,
     background: #F6F6F6 !important;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    margin-top: 30px; }
     .navigation ul li a {
       padding: 0px 0px 30px 0 !important; }
   .navigation .from-area {
@@ -226,7 +229,8 @@ h6,
     background: #F6F6F6 !important;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    margin-top: 30px; }
     .navigation ul li a {
       padding: 0px 0px 30px 0 !important; }
   .navigation .from-area {
@@ -252,7 +256,8 @@ h6,
     background: #F6F6F6 !important;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    margin-top: 30px; }
     .navigation ul li a {
       padding: 0px 0px 30px 0 !important; }
   .navigation .from-area {
@@ -623,12 +628,49 @@ footer {
     top: 130px; }
 
 @media (max-width: 575.98px) {
-  .about-hero-area .hero-area-text {
-    margin-top: 0px; } }
+  .about-hero-area {
+    padding: 30px 0 50px 0;
+    margin-bottom: 0 !important; }
+    .about-hero-area .hero-area-text {
+      margin-top: 0px; }
+
+  .about-hero {
+    position: static !important;
+    margin-top: 60px; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .about-hero-area {
+    padding: 30px 0 50px 0;
+    margin-bottom: 0 !important; }
+    .about-hero-area .hero-area-text {
+      margin-top: 0px; }
+
+  .about-hero {
+    position: static !important;
+    margin-top: 60px; } }
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .about-hero-area {
+    padding: 30px 0 50px 0;
+    margin-bottom: 0 !important; }
+    .about-hero-area .hero-area-text {
+      margin-top: 0px; }
+
+  .about-hero {
+    position: static !important;
+    margin-top: 60px; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-hero-area {
+    margin-bottom: 345px !important; }
+    .about-hero-area .hero-area-text {
+      margin-top: 140px !important; }
+      .about-hero-area .hero-area-text h1 {
+        font-size: 40px; } }
 .experiences {
   background-color: #F6F6F6;
   padding: 80px 150px;
   position: relative; }
+  .experiences h2 {
+    font-size: 42px;
+    font-weight: 700; }
   .experiences .block {
     background-color: #fff;
     padding: 25px;
@@ -636,11 +678,24 @@ footer {
             box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
     text-align: left;
     margin-bottom: 92px;
-    width: 350px; }
+    width: 350px;
+    position: relative; }
     .experiences .block h4 {
-      border-bottom: 1px solid red; }
+      border-bottom: 1px solid #DEDBDC; }
     .experiences .block p {
       margin-left: 14px; }
+    .experiences .block span {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #F8E3E4;
+      font-size: 15px;
+      color: #E8505B;
+      line-height: 36px;
+      text-align: center;
+      position: absolute;
+      right: 15px;
+      bottom: 15px; }
   .experiences .line-shap {
     position: absolute;
     height: 620px;
@@ -661,8 +716,11 @@ footer {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
-      .experiences .line-shap .radius .radius-meddel {
+              align-items: center;
+      position: relative; }
+      .experiences .line-shap .radius::after {
+        position: absolute;
+        content: "";
         width: 16px;
         height: 16px;
         border-radius: 50%;
@@ -682,4 +740,78 @@ footer {
       bottom: -5px;
       left: -11px; }
 
+@media (max-width: 575.98px) {
+  .experiences {
+    padding: 80px 10px 0px 10px;
+    margin-top: 100px; }
+    .experiences .block {
+      margin-bottom: 100px;
+      margin-top: -50px; }
+    .experiences h2 {
+      font-size: 35px; }
+    .experiences p {
+      font-size: 13px; }
+    .experiences .line-shap {
+      display: none; }
+    .experiences span {
+      bottom: 5px !important; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .experiences {
+    padding: 80px 10px 0px 10px;
+    margin-top: 100px; }
+    .experiences .block {
+      width: 100%; }
+    .experiences .line-shap {
+      display: none; } }
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .experiences {
+    padding: 80px 10px 0px 10px;
+    margin-top: 100px; }
+    .experiences .block {
+      width: 48%;
+      margin-bottom: 30px; }
+    .experiences .line-shap {
+      display: none; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .experiences {
+    padding: 80px 44px; } }
+.proposal h2 {
+  font-size: 30px;
+  font-weight: 700; }
+
+.tools {
+  background: #F6F6F6;
+  padding: 80px 179px 30px 179px; }
+  .tools h2 {
+    font-size: 42px;
+    font-weight: 700; }
+  .tools .tools-icon {
+    padding: 50px 0; }
+    .tools .tools-icon li {
+      margin-bottom: 50px; }
+      .tools .tools-icon li a {
+        margin: 0 20px; }
+
+@media (max-width: 575.98px) {
+  .tools {
+    background: #F6F6F6;
+    padding: 80px 10px 0px 10px; }
+    .tools h2 {
+      font-size: 30px; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .tools {
+    background: #F6F6F6;
+    padding: 80px 10px 0px 10px; }
+    .tools h2 {
+      font-size: 30px; } }
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .tools {
+    background: #F6F6F6;
+    padding: 80px 10px 0px 10px; }
+    .tools h2 {
+      font-size: 30px; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .tools {
+    background: #F6F6F6;
+    padding: 80px 70px 30px 70px; } }
 /*# sourceMappingURL=style.css.map */
