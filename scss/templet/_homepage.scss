@@ -300,62 +300,69 @@ h1 {
             }
         }
     }
-  .pagination{
-      ul{
-          text-align: center;
-      }
-      .preve{
-          width: 130px !important;
-      }
-  }
+
+    .pagination {
+        ul {
+            text-align: center;
+        }
+
+        .preve {
+            width: 130px !important;
+        }
+    }
 }
 
 @include tablet {
-    .news-item{
+    .news-item {
         margin-bottom: 30px;
     }
+
     .news-text {
-      width: 330px;
+        width: 330px;
     }
-    .pagination{
-        ul{
+
+    .pagination {
+        ul {
             text-align: center;
             margin: 0 10px !important;
-            li{
-                a{
+
+            li {
+                a {
                     width: 20px !important;
                     height: 20px !important;
                     font-size: 15px;
                 }
             }
         }
-       
+
     }
 }
 
 @include desktop {
-    .news-item{
+    .news-item {
         margin-bottom: 30px;
     }
 
 }
 
-@include desktop-lg{
-    .pagination{
-        ul{
+@include desktop-lg {
+    .pagination {
+        ul {
             text-align: center;
             margin: 0 12px !important;
-            li{
-                a{
+
+            li {
+                a {
                     width: 22px !important;
                     height: 22px !important;
                     font-size: 18px;
                 }
             }
         }
-       
+
     }
 }
+
 // //////
 .pagination {
     .prevnext {
@@ -416,7 +423,6 @@ h1 {
 // ///
 footer {
     background-color: $primary-color !important;
-    padding: 40px 0;
 
 
     .links {
@@ -461,6 +467,25 @@ footer {
             }
         }
 
+    }
+}
+
+@include mobile {
+    .links {
+        padding: 40px 0;
+    }
+}
+
+
+
+@include desktop{
+    footer .socal-icon li a {
+        margin-right: 0px;
+    }
+}
+@include desktop-lg {
+    footer .socal-icon li a {
+        margin-right: 0px;
     }
 }
 
