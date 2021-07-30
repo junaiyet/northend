@@ -377,14 +377,15 @@ h1 span {
   .slick-dots {
     position: absolute;
     left: 50%;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px); }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
     .slick-dots li {
       display: inline-block;
       margin-right: 10px; }
       .slick-dots li button {
         font-size: 0;
-        background: #E8505B;
+        border: 1px solid #E8505B !important;
+        background: transparent;
         width: 14px;
         height: 14px;
         border-radius: 50%;
@@ -395,14 +396,15 @@ h1 span {
   .slick-dots {
     position: absolute;
     left: 50%;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px); }
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
     .slick-dots li {
       display: inline-block;
       margin-right: 10px; }
       .slick-dots li button {
         font-size: 0;
-        background: #E8505B;
+        border: 1px solid #E8505B !important;
+        background: transparent;
         width: 14px;
         height: 14px;
         border-radius: 50%;
@@ -814,4 +816,5 @@ footer {
   .tools {
     background: #F6F6F6;
     padding: 80px 70px 30px 70px; } }
+
 /*# sourceMappingURL=style.css.map */
