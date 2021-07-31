@@ -1,21 +1,19 @@
-.fixd-manu {
-    background-color: $primary-color !important;
-    position: fixed !important;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
-.fixd-manu ul li a {
-    padding: 20px 22px !important;
+.fixd{
+    box-shadow: 0 0 10px rgba(0,0,0,.161);
+    background: $white;
 
 }
 
-.main-navigation {
-    position: fixed;
+.navigation {
+    background: $primary-color;
     width: 100%;
     z-index: 9999;
     transition: .4s;
+    .navbar-brand {
+        padding-top: 0;
+       
+    }
     .search-btn {
         position: relative;
 
@@ -24,7 +22,7 @@
             border: 2px solid $border-color;
             border-radius: 0rem;
             transition: border-color .0, box-shadow 0;
-            height: 42px;
+            height: 50px;
             color: $input-text-color;
 
             &:focus {
@@ -61,33 +59,46 @@
     ul {
         li {
             position: relative;
+
             &:hover {
                 .sub-menu {
                     opacity: 1;
                     visibility: visible;
-                    top: 80%;
+                    top: 90%;
 
                 }
             }
+
             a {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                padding-left: 22px !important;
-                padding-right: 22px !important;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 15px !important;
+                padding-right: 15px !important;
                 color: $tertiary-color !important;
                 font-size: 15px;
                 transition: .4s;
 
                 &:hover {
                     color: $secondery-color !important;
+
+
                 }
+
             }
+
+            select {
+                margin-top: 20px;
+                margin-left: 15px !important;
+                margin-right: 15px !important;
+                background: transparent;
+                border: 0;
+            }
+
             .sub-menu {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                top: 50%;
-                visibility: hidden;
+                top: 70%;
                 width: 200px;
                 background: $white;
                 opacity: 0;
@@ -113,9 +124,9 @@
 }
 
 @include mobile {
-    .main-navigation {
+    .navigation {
         .navber {
-            padding: 20px 0 !important;
+            padding: 20px 0 20px 10px !important;
 
             .navbar-toggler {
                 i {
@@ -153,7 +164,7 @@
 }
 
 @include tablet {
-    .main-navigation {
+    .navigation {
         .navber {
             padding: 20px 0 !important;
 
@@ -193,7 +204,7 @@
 }
 
 @include desktop {
-    .main-navigation{
+    .navigation {
         .navber {
             padding: 20px 0 !important;
 
@@ -230,5 +241,13 @@
             justify-content: center;
             align-content: center;
         }
+    }
+}
+@include desktop-lg{
+    .navigation ul li a {
+
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+     
     }
 }

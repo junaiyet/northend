@@ -51,3 +51,17 @@ $(window).scroll(function(){
   }   
 })
 
+$(window).scroll(function(){
+  if($(window).scrollTop() > 0){
+    $(".nav-bg").addClass("fixd")
+  }else{
+    $(".nav-bg").removeClass("fixd")
+  }   
+})
+
+// var mixitup = require('mixitup');
+
+
+var containerEl = document.querySelector('.mixit-main');
+
+            var mixer = mixitup(containerEl);

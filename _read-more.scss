@@ -1,0 +1,27 @@
+#what-is-figma{
+    font-size: 40px !important;
+    line-height: 3;
+    font-weight: 700;
+}
+.collaboration-in-figma{
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 700;
+}
+ol{
+    li{
+        line-height: 1.7;
+    }
+}
+
+// 
+.btn-outline-primary {
+	color: $secondery-color;
+	border-color: $secondery-color;
+	line-height: 25px;
+    &:hover{
+        background: $secondery-color;
+        border-color: $secondery-color;
+
+    }
+}
