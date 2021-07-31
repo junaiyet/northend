@@ -10,6 +10,7 @@ h1 {
     span {
         font-weight: 700;
         position: relative;
+        display: inline-block;
 
         &::after {
             content: "";
@@ -26,13 +27,13 @@ h1 {
 
 @include tablet {
     h1 span::after {
-        right: -100px;
+        right: -90px;
     }
 }
 
 @include desktop {
     h1 span::after {
-        right: -145px !important;
+        right: 0 !important;
         top: 80px !important;
     }
 }
@@ -430,9 +431,10 @@ h1 {
         font-size: 14px;
 
     }
-    .next{
+
+    .next {
         background: $pagination-bg;
-        
+
     }
 }
 
