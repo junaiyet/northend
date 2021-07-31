@@ -462,11 +462,7 @@ footer {
     }
 }
 
-@include mobile {
-    .links {
-        padding: 40px 0;
-    }
-}
+
 
 @include desktop {
     footer .socal-icon li a {

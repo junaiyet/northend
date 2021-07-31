@@ -591,9 +591,6 @@ footer {
         color: #222222;
         border: 1px solid #222222 !important; }
 
-@media (max-width: 575.98px) {
-  .links {
-    padding: 40px 0; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   footer .socal-icon li a {
     margin-right: 0px; } }
