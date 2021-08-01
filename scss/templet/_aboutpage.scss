@@ -18,7 +18,7 @@
         position: absolute;
         width: 100%;
         left: 50%;
-        top: 50%;
+        top: 30%;
         transform: translate(-50%, -50%);
         z-index: -1;
     }
@@ -138,8 +138,8 @@
             content: "";
             height: 22px;
             width: 22px;
-            bottom: 25px;
-            right: -72px;
+            bottom: -60px;
+            right: -71px;
             border: 4px solid #f5d6d9;
             background-color: #e8505b;
             border-radius: 50px;
@@ -187,8 +187,8 @@
             content: "";
             height: 22px;
             width: 22px;
-            top: -44px;
-            left: calc(50% - 11px);
+            top: -54px;
+            left: calc(50% - 10px);
             border: 4px solid #f5d6d9;
             background-color: #e8505b;
             border-radius: 50px;
