@@ -503,6 +503,9 @@ h1 span {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
+@media (max-width: 575.98px) {
+  h1 span::after {
+    display: none; } }
 @media (min-width: 576px) and (max-width: 768px) {
   h1 span::after {
     right: -90px; } }
