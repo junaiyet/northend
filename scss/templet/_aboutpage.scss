@@ -52,10 +52,8 @@
 
 @include mobile {
     .about-hero-area {
-        padding: 30px 0 50px 0;
 
-        margin-bottom: 0 !important;
-
+        padding: 100px 0 0px 0;
         .hero-area-text {
             margin-top: 0px;
         }
@@ -66,10 +64,7 @@
 
 @include tablet {
     .about-hero-area {
-        padding: 30px 0 50px 0;
-
-        margin-bottom: 0 !important;
-
+        padding: 100px 0 0px 0;
         .hero-area-text {
             margin-top: 0px;
         }
@@ -80,10 +75,7 @@
 
 @include desktop {
     .about-hero-area {
-        padding: 30px 0 50px 0;
-
-        margin-bottom: 0 !important;
-
+        padding: 100px 0 50px 0;
         .hero-area-text {
             margin-top: 0px;
         }
@@ -93,9 +85,6 @@
 
 @include desktop-lg {
     .about-hero-area {
-
-        margin-bottom: 345px !important;
-
         .hero-area-text {
             margin-top: 140px !important;
 
@@ -132,7 +121,6 @@
         position: relative;
 
     
-
         &::before {
             position: absolute;
             content: "";
@@ -197,65 +185,26 @@
         }
       
     }
-
-    // .line-shap {
-    //     position: absolute;
-    //     height: 620px;
-    //     width: 2px;
-    //     background: #DEDBDC;
-    //     left: 50%;
-    //     top: 23%;
-
-    //     .radius {
-    //         width: 24px;
-    //         height: 24px;
-    //         border-radius: 50%;
-    //         background: rgba(232, 80, 91, 0.2);
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         position: relative;
-
-    //         &::after {
-    //             position: absolute;
-    //             content: "";
-    //             width: 16px;
-    //             height: 16px;
-    //             border-radius: 50%;
-    //             background: $secondery-color;
-    //         }
-
-    //     }
-
-    //     .top {
-    //         position: absolute !important;
-    //         top: -5px;
-    //         left: -11px;
-    //     }
-
-    //     .medel {
-    //         position: absolute !important;
-    //         top: 50%;
-    //         left: -11px;
-    //         transform: translateY(-50%);
-    //     }
-
-    //     .bottom {
-    //         position: absolute !important;
-    //         bottom: -5px;
-    //         left: -11px;
-    //     }
-    // }
 }
 
 @include mobile {
     .experiences {
         padding: 80px 10px 0px 10px;
         margin-top: 100px;
-
+      .experiences-item{
+        &::after {
+            display: none;
+           }
+           &::before {
+            display: none;
+           }
+      }
         .block {
             margin-bottom: 100px;
             margin-top: -50px;
+           &::before {
+              display: none;
+            }
         }
 
         h2 {
@@ -266,10 +215,7 @@
             font-size: 13px;
         }
 
-        .line-shap {
-            display: none;
-        }
-
+   
         span {
             bottom: 5px !important;
         }
@@ -280,31 +226,47 @@
     .experiences {
         padding: 80px 10px 0px 10px;
         margin-top: 100px;
-
+        .experiences-item{
+            &::after {
+                display: none;
+               }
+               &::before {
+                display: none;
+               }
+          }
         .block {
             width: 100%;
+            &::before {
+                display: none;
+              }
         }
 
-        .line-shap {
-            display: none;
-        }
 
     }
 }
 
 @include desktop {
     .experiences {
-        padding: 80px 10px 0px 10px;
+        padding: 80px 10px 50px 10px;
         margin-top: 100px;
-
+       .experiences-item{
+        &::after {
+            top: -20px;
+        }
+        &::before{
+            top: -40px;
+        }
+       }
         .block {
             width: 48%;
             margin-bottom: 30px;
+            &:before {
+                bottom: -29px;
+                right: -27px;
+            }
         }
 
-        .line-shap {
-            display: none;
-        }
+       
     }
 }
 
@@ -312,6 +274,11 @@
     .experiences {
         padding: 80px 44px;
     }
+   .block{
+    &::before {
+        right: -87px !important;
+    }
+   } 
 }
 
 // /////////

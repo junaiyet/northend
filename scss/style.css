@@ -930,29 +930,24 @@ footer {
 
 @media (max-width: 575.98px) {
   .about-hero-area {
-    padding: 30px 0 50px 0;
-    margin-bottom: 0 !important; }
+    padding: 100px 0 0px 0; }
     .about-hero-area .hero-area-text {
       margin-top: 0px; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .about-hero-area {
-    padding: 30px 0 50px 0;
-    margin-bottom: 0 !important; }
+    padding: 100px 0 0px 0; }
     .about-hero-area .hero-area-text {
       margin-top: 0px; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .about-hero-area {
-    padding: 30px 0 50px 0;
-    margin-bottom: 0 !important; }
+    padding: 100px 0 50px 0; }
     .about-hero-area .hero-area-text {
       margin-top: 0px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .about-hero-area {
-    margin-bottom: 345px !important; }
-    .about-hero-area .hero-area-text {
-      margin-top: 140px !important; }
-      .about-hero-area .hero-area-text h1 {
-        font-size: 40px; } }
+  .about-hero-area .hero-area-text {
+    margin-top: 140px !important; }
+    .about-hero-area .hero-area-text h1 {
+      font-size: 40px; } }
 .experiences {
   background-color: #F6F6F6;
   padding: 80px 150px;
@@ -1024,37 +1019,53 @@ footer {
   .experiences {
     padding: 80px 10px 0px 10px;
     margin-top: 100px; }
+    .experiences .experiences-item::after {
+      display: none; }
+    .experiences .experiences-item::before {
+      display: none; }
     .experiences .block {
       margin-bottom: 100px;
       margin-top: -50px; }
+      .experiences .block::before {
+        display: none; }
     .experiences h2 {
       font-size: 35px; }
     .experiences p {
       font-size: 13px; }
-    .experiences .line-shap {
-      display: none; }
     .experiences span {
       bottom: 5px !important; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .experiences {
     padding: 80px 10px 0px 10px;
     margin-top: 100px; }
+    .experiences .experiences-item::after {
+      display: none; }
+    .experiences .experiences-item::before {
+      display: none; }
     .experiences .block {
       width: 100%; }
-    .experiences .line-shap {
-      display: none; } }
+      .experiences .block::before {
+        display: none; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .experiences {
-    padding: 80px 10px 0px 10px;
+    padding: 80px 10px 50px 10px;
     margin-top: 100px; }
+    .experiences .experiences-item::after {
+      top: -20px; }
+    .experiences .experiences-item::before {
+      top: -40px; }
     .experiences .block {
       width: 48%;
       margin-bottom: 30px; }
-    .experiences .line-shap {
-      display: none; } }
+      .experiences .block:before {
+        bottom: -29px;
+        right: -27px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .experiences {
-    padding: 80px 44px; } }
+    padding: 80px 44px; }
+
+  .block::before {
+    right: -87px !important; } }
 .proposal h2 {
   font-size: 30px;
   font-weight: 700; }
