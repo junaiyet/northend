@@ -154,6 +154,8 @@
             margin-top: 30px;
 
             li {
+                margin-top: 0;
+                margin-bottom: 0;
                 a {
                     padding: 0px 0px 30px 0 !important;
                 }
@@ -171,18 +173,18 @@
 
         .from-area {
             position: relative;
-            top: -80px;
+            top: -40px;
             display: flex;
             justify-content: center;
             align-content: center;
         }
     }
 }
-
 @include tablet {
     .navigation {
+
         .navber {
-            padding: 20px 0 !important;
+            padding: 20px 0 20px 10px !important;
 
             .navbar-toggler {
                 i {
@@ -203,9 +205,12 @@
             margin-top: 30px;
 
             li {
+                margin-top: 0;
+                margin-bottom: 0;
                 a {
                     padding: 0px 0px 30px 0 !important;
                 }
+
                 &:hover .sub-menu {
                     top: 50%;
                     z-index: 9;
@@ -219,18 +224,18 @@
 
         .from-area {
             position: relative;
-            top: -80px;
+            top: -40px;
             display: flex;
             justify-content: center;
             align-content: center;
         }
     }
 }
-
 @include desktop {
     .navigation {
+
         .navber {
-            padding: 20px 0 !important;
+            padding: 20px 0 20px 10px !important;
 
             .navbar-toggler {
                 i {
@@ -239,7 +244,6 @@
             }
 
             .navbar-toggler:focus {
-
                 box-shadow: 0;
             }
         }
@@ -252,9 +256,12 @@
             margin-top: 30px;
 
             li {
+                margin-top: 0;
+                margin-bottom: 0;
                 a {
                     padding: 0px 0px 30px 0 !important;
                 }
+
                 &:hover .sub-menu {
                     top: 50%;
                     z-index: 9;
@@ -268,13 +275,26 @@
 
         .from-area {
             position: relative;
-            top: -80px;
+            top: -40px;
             display: flex;
             justify-content: center;
             align-content: center;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @include desktop-lg {
     .navigation ul li a {

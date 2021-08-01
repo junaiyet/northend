@@ -234,14 +234,17 @@ h6,
     padding-top: 30px;
     padding-bottom: 60px;
     margin-top: 30px; }
-    .main-navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .main-navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .main-navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .main-navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .main-navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .main-navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .main-navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .main-navigation .from-area {
     position: relative;
     top: -80px;
@@ -265,16 +268,19 @@ h6,
     background: #F6F6F6 !important;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     margin-top: 30px; }
-    .main-navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .main-navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .main-navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .main-navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .main-navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .main-navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .main-navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .main-navigation .from-area {
     position: relative;
     top: -80px;
@@ -298,19 +304,22 @@ h6,
     background: #F6F6F6 !important;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     margin-top: 30px; }
-    .main-navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .main-navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .main-navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .main-navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .main-navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .main-navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .main-navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .main-navigation .from-area {
     position: relative;
-    top: -80px;
+    top: -60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,17 +437,20 @@ h6,
     padding-top: 30px;
     padding-bottom: 60px;
     margin-top: 30px; }
-    .navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .navigation .from-area {
     position: relative;
-    top: -80px;
+    top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,7 +461,7 @@ h6,
         align-content: center; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .navigation .navber {
-    padding: 20px 0 !important; }
+    padding: 20px 0 20px 10px !important; }
     .navigation .navber .navbar-toggler i {
       margin-top: 10px !important; }
     .navigation .navber .navbar-toggler:focus {
@@ -461,17 +473,20 @@ h6,
     padding-top: 30px;
     padding-bottom: 60px;
     margin-top: 30px; }
-    .navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .navigation .from-area {
     position: relative;
-    top: -80px;
+    top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,7 +497,7 @@ h6,
         align-content: center; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .navigation .navber {
-    padding: 20px 0 !important; }
+    padding: 20px 0 20px 10px !important; }
     .navigation .navber .navbar-toggler i {
       margin-top: 10px !important; }
     .navigation .navber .navbar-toggler:focus {
@@ -494,17 +509,20 @@ h6,
     padding-top: 30px;
     padding-bottom: 60px;
     margin-top: 30px; }
-    .navigation ul li a {
-      padding: 0px 0px 30px 0 !important; }
-    .navigation ul li:hover .sub-menu {
-      top: 50%;
-      z-index: 9; }
-    .navigation ul li .sub-menu {
-      text-align: center;
-      padding: 20px; }
+    .navigation ul li {
+      margin-top: 0;
+      margin-bottom: 0; }
+      .navigation ul li a {
+        padding: 0px 0px 30px 0 !important; }
+      .navigation ul li:hover .sub-menu {
+        top: 50%;
+        z-index: 9; }
+      .navigation ul li .sub-menu {
+        text-align: center;
+        padding: 20px; }
   .navigation .from-area {
     position: relative;
-    top: -80px;
+    top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
