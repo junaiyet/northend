@@ -1139,6 +1139,8 @@ footer {
 .card-body {
   -webkit-box-shadow: 0 10px 30px rgba(68, 74, 102, 0.1) !important;
           box-shadow: 0 10px 30px rgba(68, 74, 102, 0.1) !important; }
+  .card-body .card-title {
+    font-weight: 600; }
 
 .btn-transparen {
   color: #E8505B;

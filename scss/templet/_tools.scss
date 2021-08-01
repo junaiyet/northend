@@ -24,6 +24,10 @@
 
 .card-body {
     box-shadow: 0 10px 30px rgba(68, 74, 102, .1) !important;
+
+    .card-title {
+        font-weight: 600;
+    }
 }
 
 .btn-transparen {
@@ -98,6 +102,7 @@ footer {
         }
     }
 }
+
 @include tablet {
     footer {
         .logo {
@@ -106,6 +111,7 @@ footer {
         }
     }
 }
+
 @include desktop {
     footer {
         .logo {
