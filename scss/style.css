@@ -135,8 +135,12 @@ h6,
   background-color: #F6F6F6 !important;
   position: fixed !important;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.fixd-manu ul li {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
 
 .main-navigation {
   position: fixed;
@@ -180,7 +184,9 @@ h6,
   .main-navigation ul li {
     position: relative;
     margin-top: 25px;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    -webkit-transition: .4s;
+    transition: .4s; }
     .main-navigation ul li:hover .sub-menu {
       opacity: 1;
       visibility: visible;
@@ -331,7 +337,13 @@ h6,
 .fixd {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.161);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.161);
-  background: #fff; }
+  background: #fff;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.fixd ul li {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important; }
 
 .navigation {
   background: #F6F6F6;
@@ -377,7 +389,9 @@ h6,
   .navigation ul li {
     position: relative;
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    -webkit-transition: .4s;
+    transition: .4s; }
     .navigation ul li:hover .sub-menu {
       opacity: 1;
       visibility: visible;
