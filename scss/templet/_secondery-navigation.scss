@@ -113,6 +113,7 @@
                 li {
                     margin-top: 10px;
                     margin-bottom: 10px;
+
                     a {
                         display: block;
                         padding-top: 10px;
@@ -130,6 +131,7 @@
 
 @include mobile {
     .navigation {
+
         .navber {
             padding: 20px 0 20px 10px !important;
 
@@ -154,6 +156,15 @@
             li {
                 a {
                     padding: 0px 0px 30px 0 !important;
+                }
+
+                &:hover .sub-menu {
+                    top: 50%;
+                    z-index: 9;
+                }
+                .sub-menu{
+                      text-align: center;
+                      padding: 20px;
                 }
             }
         }
@@ -195,6 +206,14 @@
                 a {
                     padding: 0px 0px 30px 0 !important;
                 }
+                &:hover .sub-menu {
+                    top: 50%;
+                    z-index: 9;
+                }
+                .sub-menu{
+                      text-align: center;
+                      padding: 20px;
+                }
             }
         }
 
@@ -235,6 +254,14 @@
             li {
                 a {
                     padding: 0px 0px 30px 0 !important;
+                }
+                &:hover .sub-menu {
+                    top: 50%;
+                    z-index: 9;
+                }
+                .sub-menu{
+                      text-align: center;
+                      padding: 20px;
                 }
             }
         }
