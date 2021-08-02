@@ -1,27 +1,28 @@
 .tools-list {
-
-    li {
-        a {
-            display: block;
-            padding: 12px 20px;
-            margin-bottom: 5px;
-            border-radius: 4px;
-            color: #000;
-
-        }
-
-
-
+    .list {
+        display: block;
+        padding: 12px 20px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        color: #000;
     }
+
+     .active {
+        background: $secondery-color;
+        color: $white;
+    }
+
 }
 
-.mixitup-control-active {
-    padding: 12px 20px;
-    color: $white !important;
-    cursor: pointer;
-    background: $secondery-color;
-}
 
+
+
+
+
+
+.card{
+    margin-bottom: 50px;
+}
 .card-body {
     box-shadow: 0 10px 30px rgba(68, 74, 102, .1) !important;
 

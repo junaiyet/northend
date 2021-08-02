@@ -58,10 +58,20 @@ $(window).scroll(function () {
   }
 });
 
+  
 
-var containerEl = document.querySelector('.mixit-main');
 
 
-            if (containerEl) {
-              mixer = mixitup(containerEl);
-            }
+    $(document).on('click','ul li', function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    });
+
+     
+
+  // var filterizd = $('.filtr-container').filterizr({
+  //      // options here
+  //   });
+    if ($('').filterizr) {
+      $('.filtr-container').filterizr();
+    }
+

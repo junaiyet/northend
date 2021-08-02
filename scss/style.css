@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0; }
 
+::-moz-selection {
+  background-color: #E8505B;
+  color: #fff; }
+
+::selection {
+  background-color: #E8505B;
+  color: #fff; }
+
 ol,
 ul {
   list-style-type: none;
@@ -220,9 +228,7 @@ h6,
         margin-top: 10px;
         margin-bottom: 10px; }
         .main-navigation ul li .sub-menu li a {
-          display: block;
-          padding-top: 10px;
-          padding-bottom: 10px; }
+          display: block; }
   .main-navigation .navbar-toggler {
     margin-top: 15px; }
 
@@ -431,9 +437,7 @@ h6,
         margin-top: 10px;
         margin-bottom: 10px; }
         .navigation ul li .sub-menu li a {
-          display: block;
-          padding-top: 10px;
-          padding-bottom: 10px; }
+          display: block; }
   .navigation .navbar-toggler {
     margin-top: 15px; }
 
@@ -752,16 +756,26 @@ h1 span {
 .catagory-item {
   background: #fff;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09);
-          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09);
-  padding: 21px 0; }
-  .catagory-item h4 {
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09); }
+  .catagory-item a {
+    display: inline-block;
+    padding: 21px 0;
     -webkit-transition: .4s;
     transition: .4s; }
-    .catagory-item h4:hover {
+    .catagory-item a i {
+      font-size: 30px;
+      color: #E8505B;
+      -webkit-transition: .4s;
+      transition: .4s; }
+    .catagory-item a h4 {
+      -webkit-transition: .4s;
+      transition: .4s; }
+    .catagory-item a:hover h4 {
       color: #E8505B; }
+    .catagory-item a:hover i {
+      color: #222222; }
 
 .ct-it {
-  padding: 29px 0;
   border: 1px solid #E8505B; }
 
 @media (max-width: 575.98px) {
@@ -772,14 +786,10 @@ h1 span {
 
 .news-text {
   background-color: #fff;
-  top: 50%;
-  left: 80%;
-  width: 479px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 25px;
+  padding: 30px;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
-          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122); }
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
+  margin-left: -60px; }
   .news-text h2 {
     -webkit-transition: .4s;
     transition: .4s; }
@@ -803,24 +813,19 @@ h1 span {
 
 @media (max-width: 575.98px) {
   .news-text {
-    position: static !important;
-    width: 270px;
-    margin: 50px auto 0 auto; }
-    .news-text ul li {
-      margin-right: 3px;
-      padding-right: 5px;
-      font-size: 12px; }
+    margin-left: 0px; }
 
   .pagination ul {
     text-align: center; }
   .pagination .preve {
     width: 130px !important; } }
 @media (min-width: 576px) and (max-width: 768px) {
-  .news-item {
-    margin-bottom: 30px; }
-
   .news-text {
-    width: 330px; }
+    margin-left: 0px;
+    margin-top: -50px; }
+
+  .news-text ul li {
+    margin-top: 20px !important; }
 
   .pagination ul {
     text-align: center;
@@ -830,9 +835,17 @@ h1 span {
       height: 20px !important;
       font-size: 15px; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
-  .news-item {
-    margin-bottom: 30px; } }
+  .news-text {
+    margin-left: 0px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .news-text {
+    padding: 20px; }
+    .news-text h2 {
+      font-size: 22px; }
+
+  .news-text ul li {
+    margin-top: 10px; }
+
   .pagination ul {
     text-align: center;
     margin: 0 12px !important; }
@@ -991,12 +1004,10 @@ footer {
     font-weight: 700; }
   .experiences .block {
     background-color: #fff;
+    margin-bottom: 80px;
     padding: 25px;
     -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
             box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
-    text-align: left;
-    margin-bottom: 92px;
-    width: 350px;
     position: relative; }
     .experiences .block::before {
       position: absolute;
@@ -1004,7 +1015,7 @@ footer {
       height: 22px;
       width: 22px;
       bottom: -60px;
-      right: -71px;
+      right: -81px;
       border: 4px solid #f5d6d9;
       background-color: #e8505b;
       border-radius: 50px;
@@ -1012,7 +1023,7 @@ footer {
     .experiences .block h4 {
       border-bottom: 1px solid #DEDBDC; }
     .experiences .block p {
-      margin-left: 14px; }
+      line-height: 1.2; }
     .experiences .block span {
       width: 36px;
       height: 36px;
@@ -1030,7 +1041,7 @@ footer {
     .experiences .experiences-item:after {
       position: absolute;
       content: "";
-      height: 100%;
+      height: calc(100% + 20px);
       top: -40px;
       width: 2px;
       left: 50%;
@@ -1137,18 +1148,18 @@ footer {
   .tools {
     background: #F6F6F6;
     padding: 80px 70px 30px 70px; } }
-.tools-list li a {
+.tools-list .list {
   display: block;
   padding: 12px 20px;
   margin-bottom: 5px;
   border-radius: 4px;
   color: #000; }
+.tools-list .active {
+  background: #E8505B;
+  color: #fff; }
 
-.mixitup-control-active {
-  padding: 12px 20px;
-  color: #fff !important;
-  cursor: pointer;
-  background: #E8505B; }
+.card {
+  margin-bottom: 50px; }
 
 .card-body {
   -webkit-box-shadow: 0 10px 30px rgba(68, 74, 102, 0.1) !important;

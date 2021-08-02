@@ -54,6 +54,7 @@
     .about-hero-area {
 
         padding: 100px 0 0px 0;
+
         .hero-area-text {
             margin-top: 0px;
         }
@@ -65,6 +66,7 @@
 @include tablet {
     .about-hero-area {
         padding: 100px 0 0px 0;
+
         .hero-area-text {
             margin-top: 0px;
         }
@@ -76,6 +78,7 @@
 @include desktop {
     .about-hero-area {
         padding: 100px 0 50px 0;
+
         .hero-area-text {
             margin-top: 0px;
         }
@@ -102,10 +105,11 @@
     background-color: $primary-color;
     padding: 80px 150px;
     position: relative;
-   .block:nth-child(even)::before {
+
+    .block:nth-child(even)::before {
         display: none;
-       }
-   
+    }
+
     h2 {
         font-size: 42px;
         font-weight: 700;
@@ -113,35 +117,33 @@
 
     .block {
         background-color: $white;
+        margin-bottom: 80px;
         padding: 25px;
         box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.122);
-        text-align: left;
-        margin-bottom: 92px;
-        width: 350px;
         position: relative;
 
-    
+
         &::before {
             position: absolute;
             content: "";
             height: 22px;
             width: 22px;
             bottom: -60px;
-            right: -71px;
+            right: -81px;
             border: 4px solid #f5d6d9;
             background-color: #e8505b;
             border-radius: 50px;
             z-index: 2;
         }
 
-      
+
         h4 {
             border-bottom: 1px solid $border-color;
         }
 
         p {
-            margin-left: 14px;
-      
+            line-height: 1.2;
+
         }
 
         span {
@@ -161,15 +163,17 @@
 
     .experiences-item {
         position: relative;
+
         &:after {
             position: absolute;
             content: "";
-            height: 100%;
+            height: calc(100% + 20px);
             top: -40px;
             width: 2px;
             left: 50%;
             background-color: #e1e1e1;
         }
+
         &::before {
             position: absolute;
             content: "";
@@ -183,7 +187,7 @@
             z-index: 2;
 
         }
-      
+
     }
 }
 
@@ -191,19 +195,26 @@
     .experiences {
         padding: 80px 10px 0px 10px;
         margin-top: 100px;
-      .experiences-item{
-        &::after {
-            display: none;
-           }
-           &::before {
-            display: none;
-           }
-      }
+
+        .experiences-item {
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
         .block {
             margin-bottom: 100px;
             margin-top: -50px;
-           &::before {
-              display: none;
+
+            &::before {
+                // bottom: -37px;
+                // right: 137px;
+                display: none;
+
             }
         }
 
@@ -215,7 +226,7 @@
             font-size: 13px;
         }
 
-   
+
         span {
             bottom: 5px !important;
         }
@@ -226,19 +237,23 @@
     .experiences {
         padding: 80px 10px 0px 10px;
         margin-top: 100px;
-        .experiences-item{
+
+        .experiences-item {
             &::after {
                 display: none;
-               }
-               &::before {
-                display: none;
-               }
-          }
-        .block {
-            width: 100%;
+            }
+
             &::before {
                 display: none;
-              }
+            }
+        }
+
+        .block {
+            width: 100%;
+
+            &::before {
+                display: none;
+            }
         }
 
 
@@ -249,24 +264,28 @@
     .experiences {
         padding: 80px 10px 50px 10px;
         margin-top: 100px;
-       .experiences-item{
-        &::after {
-            top: -20px;
+
+        .experiences-item {
+            &::after {
+                top: -20px;
+            }
+
+            &::before {
+                top: -40px;
+            }
         }
-        &::before{
-            top: -40px;
-        }
-       }
+
         .block {
             width: 48%;
             margin-bottom: 30px;
+
             &:before {
                 bottom: -29px;
                 right: -27px;
             }
         }
 
-       
+
     }
 }
 
@@ -274,11 +293,12 @@
     .experiences {
         padding: 80px 44px;
     }
-   .block{
-    &::before {
-        right: -87px !important;
+
+    .block {
+        &::before {
+            right: -87px !important;
+        }
     }
-   } 
 }
 
 // /////////

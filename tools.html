@@ -14,8 +14,8 @@
 
   <!-- slick-slider -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
-      <!-- favicin-icon -->
-      <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+  <!-- favicin-icon -->
+  <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
   <!-- style.css -->
   <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -34,11 +34,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home <i class="fa fa-angle-down"
+                  aria-hidden="true"></i></a>
               <ul class="sub-menu">
                 <li><a href="tools.html">Tools Classic</a></li>
                 <li><a href="index.html">Home Creative</a></li>
-            </ul>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -55,13 +56,13 @@
                 <li><a href="tag.html">Tag</a></li>
                 <li><a href="category.html">Category</a></li>
                 <li><a href="elements.html">Elements</a></li>
-            </ul>
+              </ul>
             </li>
             <li class="nav-item">
-              <select >
+              <select>
                 <option value="En">En</option>
                 <option value="Fr">Fr</option>
-  
+
               </select>
             </li>
           </ul>
@@ -76,126 +77,143 @@
     </nav>
   </header>
 
-<!--  -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-4">
-           <ul class="tools-list position-sticky">
-             <li  ><a href="#" data-filter="all" >All Tools</a></li>
-             <li  ><a href="#"  data-filter=".dev">Dev Tools</a></li>
-             <li  ><a href="#"  data-filter=".design">Design Tools</a></li>
-             <li  ><a href="#"  data-filter=".other">Other Tools</a></li>
-        
-           </ul>
+  <!--  -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <ul class="tools-list position-sticky">
+            <li class="list active" data-filter="all">All Tools</li>
+            <li class="list" data-filter="1">Dev Tools</li>
+            <li class="list" data-filter="2">Design Tools</li>
+            <li class="list" data-filter="3">Other Tools</li>
+
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="row g-5 filtr-container">
+            <div class="col-lg-6 filtr-item " data-category="1 " data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/git.jpg" class="card-img-top" alt="img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Git</h5>
+                  <p class="card-text">Git is software for tracking changes in any set of files, usually used for
+                    coordinating …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="2, 1" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images//tools-images/xd.jpg" class="card-img-top" alt=".img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">XD</h5>
+                  <p class="card-text">Adobe XD is a vector-based user experience design tool for web apps and mobile
+                    apps, …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="1, 3" data-sort="value">
+              <div class="card border-0  ">
+                <a href="read-more.html"> <img src="images/tools-images/figma.jpg" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Figma</h5>
+                  <p class="card-text">Figma is a vector graphics editor and prototyping tool which is primarily
+                    web-based, with …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="1, 3, 5" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"><img src="images/tools-images/sublime.jpg" class="card-img-top" alt=".img">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Sublime Text</h5>
+                  <p class="card-text">Sublime Text is a shareware cross-platform source code editor with a Python
+                    application …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="1, 2, 3" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"><img src="images/tools-images/vs-code.jpg" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">VS Code</h5>
+                  <p class="card-text">Visual Studio Code is a freeware source-code editor made by Microsoft for
+                    Windows, Linux …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="5, 6" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/hotjar.png" class="card-img-top" alt=".img">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Hotjar</h5>
+                  <p class="card-text">Hotjar is a behavior analytics company that analyses website use, providing
+                    feedback …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 filtr-item" data-category="5, 6" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/MailChimp.jpg" class="card-img-top"
+                    alt=".img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">MailChimp</h5>
+                  <p class="card-text">Mailchimp is an American marketing automation platform and email marketing
+                    service.</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-9 col-md-8">
-         <div class="row g-5 mixit-main">
-           <div class="col-lg-6 mix dev ">
-            <div class="card border-0 ">
-           <a href="read-more.html"> <img src="images/tools-images/git.jpg" class="card-img-top" alt="img"></a>
-              <div class="card-body">
-                <h5 class="card-title h2">Git</h5>
-                <p class="card-text">Git is software for tracking changes in any set of files, usually used for coordinating …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix  design">
-            <div class="card border-0 ">
-              <a href="read-more.html"> <img src="images//tools-images/xd.jpg" class="card-img-top" alt=".img"></a>
-              <div class="card-body">
-                <h5 class="card-title h2">XD</h5>
-                <p class="card-text">Adobe XD is a vector-based user experience design tool for web apps and mobile apps, …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix design">
-            <div class="card border-0  ">
-              <a href="read-more.html"> <img src="images/tools-images/figma.jpg" class="card-img-top" alt="img"> </a>
-              <div class="card-body">
-                <h5 class="card-title h2">Figma</h5>
-                <p class="card-text">Figma is a vector graphics editor and prototyping tool which is primarily web-based, with …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix dev">
-            <div class="card border-0 ">
-              <a href="read-more.html"><img src="images/tools-images/sublime.jpg" class="card-img-top" alt=".img"> </a>
-              <div class="card-body">
-                <h5 class="card-title h2">Sublime Text</h5>
-                <p class="card-text">Sublime Text is a shareware cross-platform source code editor with a Python application …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix dev">
-            <div class="card border-0 ">
-              <a href="read-more.html"><img src="images/tools-images/vs-code.jpg" class="card-img-top" alt="img"> </a>
-              <div class="card-body">
-                <h5 class="card-title h2">VS Code</h5>
-                <p class="card-text">Visual Studio Code is a freeware source-code editor made by Microsoft for Windows, Linux …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix  other">
-            <div class="card border-0 ">
-              <a href="read-more.html"> <img src="images/tools-images/hotjar.png" class="card-img-top" alt=".img"> </a>
-              <div class="card-body">
-                <h5 class="card-title h2">Hotjar</h5>
-                <p class="card-text">Hotjar is a behavior analytics company that analyses website use, providing feedback …</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-           <div class="col-lg-6 mix other">
-            <div class="card border-0 ">
-             <a href="read-more.html"> <img src="images/tools-images/MailChimp.jpg" class="card-img-top" alt=".img"></a>
-              <div class="card-body">
-                <h5 class="card-title h2">MailChimp</h5>
-                <p class="card-text">Mailchimp is an American marketing automation platform and email marketing service.</p>
-                <a href="read-more.html" class="btn btn-transparen">Read More</a>
-              </div>
-            </div>
-           </div>
-         </div>
+    </div>
+  </section>
+
+
+  <!-- Demo Content -->
+
+
+
+
+  <!--  -->
+  <footer class="py-4 bg-light border-top">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-4  text-lg-left  mb-4 mb-lg-0">
+          <a class="navbar-brand" href="https://gethugothemes.com/" target="blank">
+            <img src="images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <ul class="list-inline links">
+            <li class="list-inline-item"><a class="text-dark d-block p-2" href="#"> About</a></li>
+            <li class="list-inline-item"><a class="text-dark d-block p-2" href="#"> Privacy</a></li>
+            <li class="list-inline-item"><a class="text-dark d-block p-2" href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-lg-end mb-4 mb-lg-0 text-center">
+          <ul class="list-inline socal-contact">
+            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="text-center mt-4">
+          <span>Designed &amp; Developed By <a href="https://gethugothemes.com" target="blank">Gethugothemes</a></span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!--  -->
-<footer class="py-4 bg-light border-top">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-    <div class="col-lg-4  text-lg-left  mb-4 mb-lg-0">
-      <a class="navbar-brand" href="https://gethugothemes.com/" target="blank">
-        <img src="images/logo.png" alt="logo">
-      </a>
-    </div>
-    <div class="col-lg-4 text-center mb-4 mb-lg-0">
-      <ul class="list-inline links">
-        <li class="list-inline-item"><a class="text-dark d-block p-2" href="#"> About</a></li>
-        <li class="list-inline-item"><a class="text-dark d-block p-2" href="#"> Privacy</a></li>
-        <li class="list-inline-item"><a class="text-dark d-block p-2" href="#">Terms & Conditions</a></li>
-      </ul>
-    </div>
-    <div class="col-lg-4 text-lg-end mb-4 mb-lg-0 text-center">
-      <ul class="list-inline socal-contact">
-        <li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
-      </ul>
-    </div>
-    <div class="text-center mt-4">
-      <span>Designed &amp; Developed By <a  href="https://gethugothemes.com" target="blank">Gethugothemes</a></span>
-    </div>
-  </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- jquery -->
   <script src="plugins/jquery/jquery-1.12.4.min.js"></script>
@@ -203,8 +221,8 @@
   <script src="plugins/bootstrap/bootstrap.bundle.js"></script>
   <!-- slick-slider -->
   <script src="plugins/slick/slick.min.js"></script>
-  <!-- mixitup -->
-  <script src="plugins/mixitup/mixitup.min.js"></script>
+  <!-- filterizr -->
+  <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
   <!--  -->
   <script src="js/script.js"></script>
 </body>
