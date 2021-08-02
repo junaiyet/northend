@@ -247,6 +247,14 @@ h6,
   .navigation .navbar-toggler:focus {
     -webkit-box-shadow: none !important;
             box-shadow: none !important; }
+  .navigation .dropdown-menu {
+    border-radius: 0px;
+    padding: 25px 0 !important; }
+  .navigation .dropdown-toggle::after {
+    display: none; }
+  .navigation .dropdown-item:focus, .navigation .dropdown-item:hover {
+    color: #E8505B;
+    background-color: transparent; }
 
 @media (max-width: 575.98px) {
   .navigation .navber {
@@ -267,22 +275,6 @@ h6,
       margin-bottom: 0; }
       .navigation ul li a {
         padding: 0px 0px 30px 0 !important; }
-      .navigation ul li:hover .sub-menu {
-        top: 50%;
-        z-index: 9;
-        padding-bottom: 0 !important; }
-      .navigation ul li .sub-menu {
-        text-align: center; }
-        .navigation ul li .sub-menu li {
-          padding-top: 0px !important;
-          padding-bottom: 0px !important;
-          margin: 0 !important; }
-          .navigation ul li .sub-menu li:first-child {
-            padding-top: 0px !important; }
-          .navigation ul li .sub-menu li:last-child {
-            padding-bottom: 0px !important; }
-          .navigation ul li .sub-menu li a {
-            display: block; }
   .navigation .from-area {
     position: relative;
     top: -80px;
@@ -293,7 +285,13 @@ h6,
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-line-pack: center;
-        align-content: center; } }
+        align-content: center; }
+  .navigation .dropdown-menu {
+    border-top: 3px solid #E8505B !important;
+    border-radius: none !important;
+    margin-top: -30px; }
+    .navigation .dropdown-menu li a {
+      padding: 0 0 15px 0 !important; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .navigation .navber {
     padding: 20px 0 !important; }
@@ -313,22 +311,12 @@ h6,
       margin-bottom: 0; }
       .navigation ul li a {
         padding: 0px 0px 30px 0 !important; }
-      .navigation ul li:hover .sub-menu {
-        top: 50%;
-        z-index: 9;
-        padding-bottom: 0 !important; }
-      .navigation ul li .sub-menu {
-        text-align: center; }
-        .navigation ul li .sub-menu li {
-          padding-top: 0px !important;
-          padding-bottom: 0px !important;
-          margin: 0 !important; }
-          .navigation ul li .sub-menu li:first-child {
-            padding-top: 0px !important; }
-          .navigation ul li .sub-menu li:last-child {
-            padding-bottom: 0px !important; }
-          .navigation ul li .sub-menu li a {
-            display: block; }
+      .navigation ul li .dropdown-menu {
+        border-top: 3px solid #E8505B !important;
+        border-radius: none !important;
+        margin-top: -30px; }
+        .navigation ul li .dropdown-menu li a {
+          padding: 0 0 15px 0 !important; }
   .navigation .from-area {
     position: relative;
     top: -80px;
@@ -365,23 +353,12 @@ h6,
       margin-bottom: 0; }
       .navigation ul li a {
         padding: 0px 0px 30px 0 !important; }
-      .navigation ul li:hover .sub-menu {
-        top: 50%;
-        z-index: 9;
-        padding-bottom: 0 !important; }
-      .navigation ul li .sub-menu {
-        text-align: center;
-        padding-bottom: 0 !important; }
-        .navigation ul li .sub-menu li {
-          padding-top: 0px !important;
-          padding-bottom: 0px !important;
-          margin: 0 !important; }
-          .navigation ul li .sub-menu li:first-child {
-            padding-top: 0px !important; }
-          .navigation ul li .sub-menu li:last-child {
-            padding-bottom: 0px !important; }
-          .navigation ul li .sub-menu li a {
-            display: block; }
+      .navigation ul li .dropdown-menu {
+        border-top: 3px solid #E8505B !important;
+        border-radius: none !important;
+        margin-top: -30px; }
+        .navigation ul li .dropdown-menu li a {
+          padding: 0 0 15px 0 !important; }
   .navigation .from-area {
     position: relative;
     top: -60px;
@@ -694,27 +671,14 @@ h1 span {
 
 @media (max-width: 575.98px) {
   .news-text {
-    margin-left: 0px; }
-
-  .pagination ul {
-    text-align: center; }
-  .pagination .preve {
-    width: 130px !important; } }
+    margin-left: 0px; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .news-text {
     margin-left: 0px;
     margin-top: -50px; }
 
   .news-text ul li {
-    margin-top: 20px !important; }
-
-  .pagination ul {
-    text-align: center;
-    margin: 0 10px !important; }
-    .pagination ul li a {
-      width: 20px !important;
-      height: 20px !important;
-      font-size: 15px; } }
+    margin-top: 20px !important; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .news-text {
     margin-left: 0px; } }
@@ -725,15 +689,7 @@ h1 span {
       font-size: 22px; }
 
   .news-text ul li {
-    margin-top: 10px; }
-
-  .pagination ul {
-    text-align: center;
-    margin: 0 12px !important; }
-    .pagination ul li a {
-      width: 22px !important;
-      height: 22px !important;
-      font-size: 18px; } }
+    margin-top: 10px; } }
 .pagination .prevnext {
   width: 100px;
   height: 40px;
@@ -780,6 +736,16 @@ h1 span {
 .pagination .next {
   background: #F4F4F4; }
 
+@media (max-width: 575.98px) {
+  .pagination .h5 {
+    font-size: 15px !important; }
+  .pagination ul {
+    margin: 0 0px;
+    text-align: center; }
+    .pagination ul li a {
+      margin: 0 0px;
+      width: 25px;
+      height: 25px; } }
 footer {
   background-color: #F6F6F6 !important; }
   footer .links li a {
