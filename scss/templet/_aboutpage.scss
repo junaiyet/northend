@@ -197,24 +197,45 @@
         margin-top: 100px;
 
         .experiences-item {
+            z-index: 2;
+
             &::after {
-                display: none;
+                height: calc(100% + 24px);
+                top: -85px;
+                z-index: -1;
             }
 
             &::before {
-                display: none;
+                top: -95px;
             }
+        }
+
+        .block:nth-child(odd)::after {
+            display: none;
         }
 
         .block {
             margin-bottom: 100px;
             margin-top: -50px;
+            position: relative;
 
             &::before {
-                // bottom: -37px;
-                // right: 137px;
-                display: none;
+                bottom: -37px;
+                left: calc(50% - 10px);
 
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 22px;
+                width: 22px;
+                bottom: -37px;
+                left: calc(50% - 10px);
+                border: 4px solid #f5d6d9;
+                background-color: #e8505b;
+                border-radius: 50px;
+                z-index: 2;
             }
         }
 
@@ -239,20 +260,45 @@
         margin-top: 100px;
 
         .experiences-item {
+            z-index: 2;
+
             &::after {
-                display: none;
+                height: calc(100% + 24px);
+                top: -85px;
+                z-index: -1;
             }
 
             &::before {
-                display: none;
+                top: -95px;
             }
         }
 
+        .block:nth-child(odd)::after {
+            display: none;
+        }
+
         .block {
-            width: 100%;
+            margin-bottom: 100px;
+            margin-top: -50px;
+            position: relative;
 
             &::before {
-                display: none;
+                bottom: -37px;
+                left: calc(50% - 10px);
+
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                height: 22px;
+                width: 22px;
+                bottom: -37px;
+                left: calc(50% - 10px);
+                border: 4px solid #f5d6d9;
+                background-color: #e8505b;
+                border-radius: 50px;
+                z-index: 2;
             }
         }
 

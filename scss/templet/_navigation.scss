@@ -6,13 +6,13 @@
     padding-bottom: 0px;
 }
 
-.fixd-manu ul li{
+.fixd-manu ul li {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 
 }
 
-.main-navigation {
+.navigation {
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -36,11 +36,11 @@
 
         .btn {
             position: absolute;
-            top: 0;
-            right: 14px;
+            top: 1.5px;
+            right: 10px;
 
             i {
-                font-size: 13px;
+                font-size: 15px;
                 position: relative;
 
                 &::after {
@@ -65,18 +65,16 @@
             position: relative;
             margin-top: 25px;
             margin-bottom: 25px;
-           transition: .4s;
+            transition: .4s;
+
             &:hover {
                 .sub-menu {
                     opacity: 1;
                     visibility: visible;
-                    top: 100%;
-
                 }
             }
 
             a {
-
                 padding-left: 22px !important;
                 padding-right: 22px !important;
                 color: $tertiary-color !important;
@@ -87,12 +85,14 @@
                     color: $secondery-color !important;
                 }
             }
-
+            .active{
+                color: $secondery-color !important;
+            }
             .sub-menu {
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                top: 50%;
+                right:0%;
                 visibility: hidden;
                 width: 200px;
                 background: $white;
@@ -103,25 +103,47 @@
                 transition: .4s;
 
                 li {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    margin: 0;
+
+                    &:first-child {
+                        padding-top: 14px;
+                    }
+
+                    &:last-child {
+                        padding-bottom: 14px;
+                    }
 
                     a {
                         display: block;
-                   
+
                     }
                 }
             }
         }
     }
 
+    select {
+        margin-top: 11px;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        background: transparent;
+        border: 0;
+    }
+
     .navbar-toggler {
         margin-top: 15px;
+     margin-right: 15px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
     }
 }
 
 @include mobile {
-    .main-navigation {
+    .navigation {
         .navber {
             padding: 20px 0 !important;
 
@@ -154,11 +176,29 @@
                 &:hover .sub-menu {
                     top: 50%;
                     z-index: 9;
+                    padding-bottom: 0 !important;
                 }
 
                 .sub-menu {
                     text-align: center;
-                    padding: 20px;
+                    li {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                        margin: 0 !important;
+    
+                        &:first-child {
+                            padding-top: 0px !important;
+                        }
+    
+                        &:last-child {
+                            padding-bottom: 0px !important;
+                        }
+    
+                        a {
+                            display: block; 
+    
+                        }
+                    }
                 }
             }
         }
@@ -174,7 +214,7 @@
 }
 
 @include tablet {
-    .main-navigation {
+    .navigation {
         .navber {
             padding: 20px 0 !important;
 
@@ -207,11 +247,30 @@
                 &:hover .sub-menu {
                     top: 50%;
                     z-index: 9;
+                    padding-bottom: 0 !important;
+
                 }
 
                 .sub-menu {
                     text-align: center;
-                    padding: 20px;
+                    li {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                        margin: 0 !important;
+    
+                        &:first-child {
+                            padding-top: 0px !important;
+                        }
+    
+                        &:last-child {
+                            padding-bottom: 0px !important;
+                        }
+    
+                        a {
+                            display: block; 
+    
+                        }
+                    }
                 }
             }
         }
@@ -227,7 +286,14 @@
 }
 
 @include desktop {
-    .main-navigation {
+
+    .navigation .navbar-toggler {
+        margin-top: 15px;
+        margin-right: -10px;
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    .navigation {
         .navber {
             padding: 20px 0 !important;
 
@@ -260,11 +326,33 @@
                 &:hover .sub-menu {
                     top: 50%;
                     z-index: 9;
+                    padding-bottom: 0 !important;
+
                 }
 
                 .sub-menu {
                     text-align: center;
-                    padding: 20px;
+                    padding-bottom: 0 !important;
+                    li {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                        margin: 0 !important;
+    
+                        &:first-child {
+                            padding-top: 0px !important;
+                        }
+    
+                        &:last-child {
+                            padding-bottom: 0px !important;
+                        }
+    
+                        a {
+                            display: block; 
+    
+                        }
+                    }
+
+                   
                 }
             }
         }
@@ -275,6 +363,24 @@
             display: flex;
             justify-content: center;
             align-content: center;
+        }
+
+        // .navbar-toggler {
+        //     font-size: 30px;
+        //     padding-bottom: 25px;
+        // }
+    }
+}
+
+@include desktop-lg {
+    .navigation {
+        ul {
+            li {
+                a {
+                    padding-left: 15px !important;
+                    padding-right: 15px !important;
+                }
+            }
         }
     }
 }

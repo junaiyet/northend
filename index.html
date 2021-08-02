@@ -19,11 +19,11 @@
   <link rel="stylesheet" href="scss/style.css">
 </head>
 
-<body>
-  <header class="main-navigation sticky-top menu ">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <header class="navigation sticky-top menu ">
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
-        <a class="navbar-brand" href="https://gethugothemes.com/" target="blank">
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -33,8 +33,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <ul class="sub-menu">
+              <a class="nav-link active menu-btn" aria-current="page" href="#">Home</a>
+              <ul class="sub-menu menu-content">
                 <li><a href="tools.html">Tools Classic</a></li>
                 <li><a href="index.html">Home Creative</a></li>
               </ul>
@@ -215,7 +215,7 @@
           </div>
         </div>
         <div class="col-lg-2 text-center col-sm-6 mb-sm-4 col-md-4">
-          <div class="catagory-item ct-it">
+          <div class="catagory-item ct-it h-100">
             <a href="#">
               <h4 class="pb-3 text-danger">All Categories</h4>
               <i class="fas fa-arrow-right "></i>
@@ -231,7 +231,7 @@
   <section id="recent-news">
     <div class="container">
       <div class="row justify-content-lg-center">
-        <div class="col-lg-8   mx-auto mb-5">
+        <div class="col-lg-7   mb-5 ms-4">
           <div class="title">
             <h3>Recent News</h3>
           </div>
@@ -239,12 +239,11 @@
         
           <div class="col-lg-8">
             <div class="row align-items-center pb-5 justify-content-center">
-              <div class="col-lg-4  text-center">
+              <div class="col-lg-4  text-center img">
                   <a href="#"><img class="img-fluid w-100"  src="images/recent-news-img-one.png" alt="img"></a>
   
               </div>
-                <div class="col-lg-7 col-sm-10 col-md-10">
-                  <div class="news-text">
+                <div class="col-lg-7 col-sm-10 col-md-10 news-text">
                     <a href="#">
                       <h2>High Time for Cyberlaw Enforcement and a Future of Work Strategy</h2>
                     </a>
@@ -253,16 +252,15 @@
                       <li>Nov 7, 2019</li>
                       <li><a href="#"> SEO Learning</a> </li>
                     </ul>
-                  </div>
+                  
                 </div>
             </div>
             <div class="row align-items-center pb-5 justify-content-center">
-              <div class="col-lg-4 text-center">
+              <div class="col-lg-4  text-center img">
                   <a href="#"><img class="img-fluid w-100"  src="images/recent-news-img-tow.png" alt="img"></a>
-                
+  
               </div>
-                <div class="col-lg-7 col-sm-10 col-md-10">
-                  <div class="news-text">
+                <div class="col-lg-7 col-sm-10 col-md-10 news-text">
                     <a href="#">
                       <h2>High Time for Cyberlaw Enforcement and a Future of Work Strategy</h2>
                     </a>
@@ -271,16 +269,15 @@
                       <li>Nov 7, 2019</li>
                       <li><a href="#"> SEO Learning</a> </li>
                     </ul>
-                  </div>
+                  
                 </div>
             </div>
             <div class="row align-items-center pb-5 justify-content-center">
-              <div class="col-lg-4 text-center">
+              <div class="col-lg-4  text-center news-image">
                   <a href="#"><img class="img-fluid w-100"  src="images/recent-news-img-three.png" alt="img"></a>
-                
+  
               </div>
-                <div class="col-lg-7 col-sm-10 col-md-10">
-                  <div class="news-text">
+                <div class="col-lg-7 col-sm-10 col-md-10 news-text">
                     <a href="#">
                       <h2>High Time for Cyberlaw Enforcement and a Future of Work Strategy</h2>
                     </a>
@@ -289,9 +286,10 @@
                       <li>Nov 7, 2019</li>
                       <li><a href="#"> SEO Learning</a> </li>
                     </ul>
-                  </div>
+                  
                 </div>
             </div>
+         
           </div>
           <div class="col-lg-12 mx-auto mt-5 align-items-center col-sm-12 justify-content-center d-flex">
             <div class="pagination previous align-items-center">
@@ -320,13 +318,13 @@
   <footer class="py-5">
     <div class="container">
       <div class="row mx-auto align-items-center text-center justify-content-between">
-        <div class="col-lg-4 col-sm-6 col-md-4 mb-4 mb-lg-0">
-          <a href="https://gethugothemes.com/" target="blank">
+        <div class="col-lg-4 col-sm-12 col-md-4 mb-4 mb-lg-0">
+          <a href="index.html">
             <img src="images/logo.png" alt="img">
           </a>
           
         </div>
-        <div class="col-lg-3 col-sm-6 col-md-4 mb-4 mb-lg-0">
+        <div class="col-lg-3 col-sm-12 col-md-4 mb-4 mb-lg-0">
           <ul class="list-inline links">
             <li class="list-inline-item"><a href="#">Home</a></li>
             <li class="list-inline-item"><a href="#">About</a></li>
@@ -342,7 +340,7 @@
           </ul>
         </div>
       </div>
-      <div class="border-bottom my-5"></div>
+      <div class="border-bottom my-4"></div>
       <p class="text-center mb-0 "> © 2020 <a href="https://gethugothemes.com/" target="blank"
           class="text-danger">Gethugothemes</a> All Rights Reserved </p>
     </div>
