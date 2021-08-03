@@ -314,9 +314,12 @@
         .experiences-item {
             &::after {
                 top: -20px;
+                left: calc(50% - 1px);
+                height: calc(100% + 15px);
             }
 
             &::before {
+                left: calc(50% - 11px);
                 top: -40px;
             }
         }
@@ -326,8 +329,8 @@
             margin-bottom: 30px;
 
             &:before {
-                bottom: -29px;
-                right: -27px;
+                bottom: -27px;
+                right: -25px;
             }
         }
 

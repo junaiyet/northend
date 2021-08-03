@@ -62,26 +62,44 @@ $(window).scroll(function () {
 
 
 
-    $(document).on('click','ul li', function(){
-      $(this).addClass('active').siblings().removeClass('active')
-    });
+    // $(document).on('click','ul li', function(){
+    //   $(this).addClass('active').siblings().removeClass('active')
+    // });
 
      
 
   // var filterizd = $('.filtr-container').filterizr({
   //      // options here
   //   });
-    if ($('').filterizr) {
-      $('.filtr-container').filterizr();
-    }
+    // if ($('').filterizr) {
+    //   $('.filtr-container').filterizr();
+    // }
 
 // ////////////////////
-let dropdownBtn = document.querySelector('.menu-btn');
-let menuContent = document.querySelector('.menu-content');
-dropdownBtn.addEventListener('click',()=>{
-   if(menuContent.style.display===""){
-      menuContent.style.display="block";
-   } else {
-      menuContent.style.display="";
-   }
+// let dropdownBtn = document.querySelector('.menu-btn');
+// let menuContent = document.querySelector('.menu-content');
+// dropdownBtn.addEventListener('click',()=>{
+//    if(menuContent.style.display===""){
+//       menuContent.style.display="block";
+//    } else {
+//       menuContent.style.display="";
+//    }
+// })
+
+$(document).ready(function(){
+  $('.list').click(function(){
+    const value = $(this).attr('data-filter');
+    if (value == 'all'){
+      $('.gallery').show('1000')
+    }
+    else{
+      $('.gallery').not('.'+value).hide('1000')
+      $('.gallery').filter('.'+value).show('1000')
+
+    }
+  })
+  // active
+  $('.list').click(function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
 })

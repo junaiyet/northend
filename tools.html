@@ -21,10 +21,10 @@
 </head>
 
 <body>
-  <header class="navigation sticky-top menu">
+  <header class="navigation sticky-top menu ">
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
-        <a class="navbar-brand" href="index.html" >
+        <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -35,8 +35,7 @@
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown  d-lg-none">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Home<i class="fa fa-angle-down ms-2"
-                aria-hidden="true"></i>
+                Home
               </a>
               <ul class="dropdown-menu border-0" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="tools.html">Tools Classic</a></li>
@@ -45,9 +44,9 @@
               </ul>
             </li>
             <li class="nav-item d-none d-lg-block">
-              <a class="nav-link active" aria-current="page" href="index.html">Home <i class="fa fa-angle-down"
-                  aria-hidden="true"></i></a>
-              <ul class="sub-menu">
+              <a class="nav-link active menu-btn" aria-current="page" href="#">Home</a>
+           
+              <ul class="sub-menu menu-content">
                 <li><a href="tools.html">Tools Classic</a></li>
                 <li><a href="index.html">Home Creative</a></li>
               </ul>
@@ -59,22 +58,10 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tools</a>
+              <a class="nav-link" href="#">Category</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-              <ul class="sub-menu">
-                <li><a href="tag.html">Tag</a></li>
-                <li><a href="category.html">Category</a></li>
-                <li><a href="elements.html">Elements</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <select>
-                <option value="En">En</option>
-                <option value="Fr">Fr</option>
-
-              </select>
+              <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
           <form class="from-area">
@@ -91,30 +78,30 @@
   <!--  -->
   <section class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-4 pb-5">
           <ul class="tools-list position-sticky">
             <li class="list active" data-filter="all">All Tools</li>
-            <li class="list" data-filter="1">Dev Tools</li>
-            <li class="list" data-filter="2">Design Tools</li>
-            <li class="list" data-filter="3">Other Tools</li>
+            <li class="list" data-filter="dev">Dev Tools</li>
+            <li class="list" data-filter="design">Design Tools</li>
+            <li class="list" data-filter="other">Other Tools</li>
 
           </ul>
         </div>
         <div class="col-lg-9 col-md-8">
-          <div class="row  filtr-container">
-            <div class="col-lg-6 filtr-item " data-category="1 " data-sort="value">
+          <div class="row  justify-content-between">
+            <div class="col-lg-6 dev gallery">
               <div class="card border-0 ">
                 <a href="read-more.html"> <img src="images/tools-images/git.jpg" class="card-img-top" alt="img"></a>
                 <div class="card-body">
                   <h5 class="card-title h2">Git</h5>
-                  <p class="card-text">Git is software for tracking changes in any set of files, usually used for
+                  <p class="card-text">Git is software for the tracking changes in any set of files, usually used for
                     coordinating …</p>
                   <a href="read-more.html" class="btn btn-transparen">Read More</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="2, 1" data-sort="value">
+            <div class="col-lg-6 design gallery" >
               <div class="card border-0 ">
                 <a href="read-more.html"> <img src="images//tools-images/xd.jpg" class="card-img-top" alt=".img"></a>
                 <div class="card-body">
@@ -125,7 +112,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="1, 3" data-sort="value">
+            <div class="col-lg-6 design gallery">
               <div class="card border-0  ">
                 <a href="read-more.html"> <img src="images/tools-images/figma.jpg" class="card-img-top" alt="img"> </a>
                 <div class="card-body">
@@ -136,7 +123,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="1, 3, 5" data-sort="value">
+            <div class="col-lg-6 dev gallery">
               <div class="card border-0 ">
                 <a href="read-more.html"><img src="images/tools-images/sublime.jpg" class="card-img-top" alt=".img">
                 </a>
@@ -148,18 +135,18 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="1, 2, 3" data-sort="value">
+            <div class="col-lg-6 dev gallery">
               <div class="card border-0 ">
                 <a href="read-more.html"><img src="images/tools-images/vs-code.jpg" class="card-img-top" alt="img"> </a>
                 <div class="card-body">
                   <h5 class="card-title h2">VS Code</h5>
                   <p class="card-text">Visual Studio Code is a freeware source-code editor made by Microsoft for
-                    Windows, Linux …</p>
+                  Linux …</p>
                   <a href="read-more.html" class="btn btn-transparen">Read More</a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="5, 6" data-sort="value">
+            <div class="col-lg-6 other gallery" >
               <div class="card border-0 ">
                 <a href="read-more.html"> <img src="images/tools-images/hotjar.png" class="card-img-top" alt=".img">
                 </a>
@@ -171,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 filtr-item" data-category="5, 6" data-sort="value">
+            <div class="col-lg-6 other gallery" >
               <div class="card border-0 ">
                 <a href="read-more.html"> <img src="images/tools-images/MailChimp.jpg" class="card-img-top"
                     alt=".img"></a>
@@ -190,6 +177,115 @@
   </section>
 
 
+
+
+
+
+
+
+
+
+
+
+  <!-- <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <ul class="tools-list position-sticky">
+            <li class="list active" data-filter="all">All Tools</li>
+            <li class="list" data-filter="1">Dev Tools</li>
+            <li class="list" data-filter="2">Design Tools</li>
+            <li class="list" data-filter="3">Other Tools</li>
+
+          </ul>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <div class="row  filtr-container justify-content-between">
+            <div class="col-lg-5 filtr-item " data-category="1 " data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/git.jpg" class="card-img-top" alt="img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Git</h5>
+                  <p class="card-text">Git is software for tracking changes in any set of files, usually used for
+                    coordinating …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="2, 1" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images//tools-images/xd.jpg" class="card-img-top" alt=".img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">XD</h5>
+                  <p class="card-text">Adobe XD is a vector-based user experience design tool for web apps and mobile
+                    apps, …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="1, 3" data-sort="value">
+              <div class="card border-0  ">
+                <a href="read-more.html"> <img src="images/tools-images/figma.jpg" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Figma</h5>
+                  <p class="card-text">Figma is a vector graphics editor and prototyping tool which is primarily
+                    web-based, with …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="1, 3, 5" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"><img src="images/tools-images/sublime.jpg" class="card-img-top" alt=".img">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Sublime Text</h5>
+                  <p class="card-text">Sublime Text is a shareware cross-platform source code editor with a Python
+                    application …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="1, 2, 3" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"><img src="images/tools-images/vs-code.jpg" class="card-img-top" alt="img"> </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">VS Code</h5>
+                  <p class="card-text">Visual Studio Code is a freeware source-code editor made by Microsoft for
+                    Windows, Linux …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="5, 6" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/hotjar.png" class="card-img-top" alt=".img">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title h2">Hotjar</h5>
+                  <p class="card-text">Hotjar is a behavior analytics company that analyses website use, providing
+                    feedback …</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 filtr-item" data-category="5, 6" data-sort="value">
+              <div class="card border-0 ">
+                <a href="read-more.html"> <img src="images/tools-images/MailChimp.jpg" class="card-img-top"
+                    alt=".img"></a>
+                <div class="card-body">
+                  <h5 class="card-title h2">MailChimp</h5>
+                  <p class="card-text">Mailchimp is an American marketing automation platform and email marketing
+                    service.</p>
+                  <a href="read-more.html" class="btn btn-transparen">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
   <!-- Demo Content -->
 
 

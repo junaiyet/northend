@@ -417,7 +417,11 @@ h1 {
 
         margin-left: 0px;
     }
-
+    .news-text ul li {
+     
+         padding-right: 0px; 
+     
+    }
 
 }
 
@@ -542,6 +546,11 @@ h1 {
        
     }
 }
+@include tablet {
+    .pagination ul li a {
+        margin: 0 5px;
+    }
+}
 
 // ///
 footer {
@@ -593,7 +602,11 @@ footer {
 }
 
 
-
+@include tablet{
+    footer .socal-icon li a {
+        margin-right: 0px;
+    }
+}
 @include desktop {
     footer .socal-icon li a {
         margin-right: 0px;
