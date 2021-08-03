@@ -203,7 +203,9 @@
         .dropdown-menu {
             border-top: 3px solid $secondery-color !important;
             border-radius: none !important;
-            margin-top: -30px;
+            margin-top: -15px;
+            background: $white !important;
+
 
             li {
                 a {
@@ -249,7 +251,8 @@
                 .dropdown-menu {
                     border-top: 3px solid $secondery-color !important;
                     border-radius: none !important;
-                    margin-top: -30px;
+                    margin-top: -15px;
+                    background: $white !important;
 
                     li {
                         a {
@@ -315,7 +318,8 @@
                 .dropdown-menu {
                     border-top: 3px solid $secondery-color !important;
                     border-radius: none !important;
-                    margin-top: -30px;
+                    margin-top: -15px;
+                    background: $white !important;
 
                     li {
                         a {

@@ -291,7 +291,8 @@ h6,
   .navigation .dropdown-menu {
     border-top: 3px solid #E8505B !important;
     border-radius: none !important;
-    margin-top: -30px; }
+    margin-top: -15px;
+    background: #fff !important; }
     .navigation .dropdown-menu li a {
       padding: 0 0 15px 0 !important; } }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -316,7 +317,8 @@ h6,
       .navigation ul li .dropdown-menu {
         border-top: 3px solid #E8505B !important;
         border-radius: none !important;
-        margin-top: -30px; }
+        margin-top: -15px;
+        background: #fff !important; }
         .navigation ul li .dropdown-menu li a {
           padding: 0 0 15px 0 !important; }
   .navigation .from-area {
@@ -358,7 +360,8 @@ h6,
       .navigation ul li .dropdown-menu {
         border-top: 3px solid #E8505B !important;
         border-radius: none !important;
-        margin-top: -30px; }
+        margin-top: -15px;
+        background: #fff !important; }
         .navigation ul li .dropdown-menu li a {
           padding: 0 0 15px 0 !important; }
   .navigation .from-area {
@@ -675,8 +678,13 @@ h1 span {
   .news-text {
     margin-left: 0px; }
 
-  .news-text ul li {
-    padding-right: 0px; } }
+  .news-text {
+    padding: 15px; }
+    .news-text ul li {
+      margin-top: 10px;
+      margin-right: 3px;
+      padding-right: 5px;
+      font-size: 13px; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .news-text {
     margin-left: 0px;
@@ -873,7 +881,7 @@ footer {
       height: 22px;
       width: 22px;
       bottom: -60px;
-      right: -81px;
+      right: -82px;
       border: 4px solid #f5d6d9;
       background-color: #e8505b;
       border-radius: 50px;
@@ -923,8 +931,8 @@ footer {
     .experiences .experiences-item {
       z-index: 2; }
       .experiences .experiences-item::after {
-        height: calc(100% + 24px);
-        top: -85px;
+        height: calc(100% + 20px);
+        top: -77px;
         z-index: -1; }
       .experiences .experiences-item::before {
         top: -95px; }
@@ -942,7 +950,7 @@ footer {
         content: "";
         height: 22px;
         width: 22px;
-        bottom: -37px;
+        bottom: -50px;
         left: calc(50% - 10px);
         border: 4px solid #f5d6d9;
         background-color: #e8505b;
@@ -961,8 +969,8 @@ footer {
     .experiences .experiences-item {
       z-index: 2; }
       .experiences .experiences-item::after {
-        height: calc(100% + 24px);
-        top: -85px;
+        height: calc(100% + 20px);
+        top: -80px;
         z-index: -1; }
       .experiences .experiences-item::before {
         top: -95px; }
@@ -980,7 +988,7 @@ footer {
         content: "";
         height: 22px;
         width: 22px;
-        bottom: -37px;
+        bottom: -45px;
         left: calc(50% - 10px);
         border: 4px solid #f5d6d9;
         background-color: #e8505b;
@@ -996,7 +1004,7 @@ footer {
       height: calc(100% + 15px); }
     .experiences .experiences-item::before {
       left: calc(50% - 11px);
-      top: -40px; }
+      top: -30px; }
     .experiences .block {
       width: 48%;
       margin-bottom: 30px; }
@@ -1008,7 +1016,7 @@ footer {
     padding: 80px 44px; }
 
   .block::before {
-    right: -87px !important; } }
+    right: -85px !important; } }
 .proposal h2 {
   font-size: 30px;
   font-weight: 700; }

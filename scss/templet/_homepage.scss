@@ -417,11 +417,17 @@ h1 {
 
         margin-left: 0px;
     }
-    .news-text ul li {
-     
-         padding-right: 0px; 
-     
-    }
+    .news-text{
+        padding: 15px;
+        ul{
+            li {
+                margin-top: 10px;
+                margin-right: 3px;
+                padding-right: 5px;
+                font-size: 13px;
+            }
+        } 
+    } 
 
 }
 
