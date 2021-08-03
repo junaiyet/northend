@@ -798,6 +798,8 @@ footer {
       footer .socal-icon li a i:hover {
         color: #222222;
         border: 1px solid #222222 !important; }
+  footer p {
+    line-height: 1.4; }
 
 @media (min-width: 576px) and (max-width: 768px) {
   footer .socal-icon li a {
