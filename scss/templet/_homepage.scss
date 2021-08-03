@@ -448,6 +448,9 @@ h1 {
 }
 
 @include desktop {
+    .title h3 {
+        margin-left: 30px;
+    }
     .news-text {
 
         margin-left: 0px;
