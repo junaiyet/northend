@@ -186,7 +186,7 @@ h6,
           background: #DEDBDC;
           position: absolute;
           left: -15px;
-          top: -3px;
+          top: -1px;
           content: ""; }
       .navigation .search-btn .btn:focus {
         -webkit-box-shadow: none;
@@ -724,7 +724,6 @@ h1 span {
     display: inline-block; }
     .pagination ul li a {
       display: inline-block;
-      margin: 0 10px;
       color: #222222;
       -webkit-transition: .4s;
       transition: .4s;
@@ -1075,6 +1074,9 @@ footer {
   .tools-list .active {
     background: #E8505B;
     color: #fff; }
+
+.tool {
+  width: 40% !important; }
 
 .card {
   margin-bottom: 50px; }
