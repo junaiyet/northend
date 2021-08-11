@@ -1070,7 +1070,8 @@ footer {
     border-radius: 4px;
     color: #000;
     -webkit-transition: .4s;
-    transition: .4s; }
+    transition: .4s;
+    cursor: pointer; }
   .tools-list .active {
     background: #E8505B;
     color: #fff; }
