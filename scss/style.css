@@ -1095,6 +1095,18 @@ footer {
   border-bottom: 1px solid #E8505B;
   padding: 2px; }
 
+.filtr-item {
+  width: 49% !important; }
+
+@media (max-width: 575.98px) {
+  .filtr-item {
+    width: 100% !important; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .filtr-item {
+    width: 100% !important; } }
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .filtr-item {
+    width: 100% !important; } }
 #what-is-figma {
   font-size: 40px !important;
   line-height: 3;

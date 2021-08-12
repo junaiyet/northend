@@ -1,5 +1,6 @@
 .tools-list {
     transition: .4s;
+
     .list {
         display: block;
         padding: 12px 20px;
@@ -10,21 +11,22 @@
         cursor: pointer;
     }
 
-     .active {
+    .active {
         background: $secondery-color;
         color: $white;
     }
 
 }
 
-.tool{
+.tool {
     width: 40% !important;
 }
 
 
-.card{
+.card {
     margin-bottom: 50px;
 }
+
 .card-body {
     box-shadow: 0 10px 30px rgba(68, 74, 102, .1) !important;
 
@@ -39,4 +41,30 @@
     border-radius: 0;
     border-bottom: 1px solid $secondery-color;
     padding: 2px
+}
+
+.filtr-item {
+    width: 49% !important;
+}
+
+
+@include mobile {
+    .filtr-item {
+        width: 100% !important;
+    }
+
+}
+
+@include tablet {
+    .filtr-item {
+        width: 100% !important;
+    }
+
+}
+
+@include desktop {
+    .filtr-item {
+        width: 100% !important;
+    }
+
 }
