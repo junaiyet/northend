@@ -1141,7 +1141,7 @@ ol {
 
 .contact {
   padding-top: 80px !important; }
-  .contact .btn-primary {
+  .contact .btn-danger {
     line-height: 2.2; }
   .contact svg {
     width: 100%; }
@@ -1165,6 +1165,19 @@ ol {
 
 textarea.form-control {
   height: 150px; }
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #E8505B;
+  border-color: #E8505B; }
+
+.btn-check:focus + .btn, .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.btn-check:active + .btn-danger:focus, .btn-check:checked + .btn-danger:focus, .btn-danger.active:focus, .btn-danger:active:focus, .show > .btn-danger.dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 @media (max-width: 575.98px) {
   .contact svg {

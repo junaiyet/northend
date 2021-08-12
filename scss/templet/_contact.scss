@@ -1,9 +1,11 @@
 .contact {
     padding-top: 80px !important;
-    .btn-primary{
+
+    .btn-danger{
         line-height: 2.2;
     }
-    svg{
+
+    svg {
         width: 100%;
     }
 }
@@ -31,7 +33,19 @@
 textarea.form-control {
     height: 150px;
 }
-@include mobile{
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: $secondery-color;
+    border-color: $secondery-color;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow:none;
+}
+.btn-check:active+.btn-danger:focus, .btn-check:checked+.btn-danger:focus, .btn-danger.active:focus, .btn-danger:active:focus, .show>.btn-danger.dropdown-toggle:focus {
+    box-shadow:none;
+}
+@include mobile {
     .contact svg {
         margin-top: -100px;
     }
