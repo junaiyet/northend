@@ -1081,6 +1081,11 @@ footer {
 
 .card {
   margin-bottom: 50px; }
+  .card img {
+    width: 100%; }
+
+.filtr-container {
+  margin-left: 20px; }
 
 .card-body {
   -webkit-box-shadow: 0 10px 30px rgba(68, 74, 102, 0.1) !important;
@@ -1100,13 +1105,22 @@ footer {
 
 @media (max-width: 575.98px) {
   .filtr-item {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .filtr-container {
+    margin-left: 0px; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .filtr-item {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .filtr-container {
+    margin-left: 0px; } }
 @media (min-width: 769px) and (max-width: 991.98px) {
   .filtr-item {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .filtr-container {
+    margin-left: 10px; } }
 #what-is-figma {
   font-size: 40px !important;
   line-height: 3;
