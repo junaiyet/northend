@@ -1,0 +1,50 @@
+.catagory{
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        span{
+        color: $secondery-color;
+        }
+    }
+   
+    ul {
+        li {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-right: 6px;
+            display: inline-block;
+            padding-right: 10px;
+            border-right: 1px solid $second-border-color;
+            font-size: 16px;
+    
+            a {
+                display: inline-block;
+                color: $text-color;
+                transition: .4s;
+    
+                &:hover {
+                    color: $secondery-color;
+                }
+    
+            }
+    
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+    h3{
+        display: inline-block;
+        transition: .4s;
+    &:hover{
+        color: $secondery-color;
+    }
+    }
+}
+@include mobile{
+    .catagory ul li {
+        margin-right: -1px;
+        padding-right: 1px;
+        font-size: 13px;
+    }
+}

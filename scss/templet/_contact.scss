@@ -1,0 +1,38 @@
+.contact {
+    padding-top: 80px !important;
+    .btn-primary{
+        line-height: 2.2;
+    }
+    svg{
+        width: 100%;
+    }
+}
+
+.contact-us {
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.form-control {
+    height: 43px;
+    line-height: 43px;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $secondery-color;
+    outline: 0;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+@include mobile{
+    .contact svg {
+        margin-top: -100px;
+    }
+}

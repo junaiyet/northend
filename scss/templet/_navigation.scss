@@ -25,7 +25,7 @@
             width: 280px;
             border: 2px solid $border-color;
             border-radius: 0rem;
-            transition: border-color .0, box-shadow 0;
+            // transition: border-color 0, box-shadow 0;
             height: 42px;
             color: $input-text-color;
 
@@ -171,7 +171,7 @@
             }
 
             .navbar-toggler:focus {
-                box-shadow: 0;
+                box-shadow: none;
             }
         }
 
@@ -202,7 +202,7 @@
 
         .dropdown-menu {
             border-top: 3px solid $secondery-color !important;
-            border-radius: none !important;
+            border-radius: 0px !important;
             margin-top: -15px;
             background: $white !important;
 
@@ -229,7 +229,7 @@
             }
 
             .navbar-toggler:focus {
-                box-shadow: 0;
+                box-shadow: none;
             }
         }
 
@@ -250,7 +250,7 @@
 
                 .dropdown-menu {
                     border-top: 3px solid $secondery-color !important;
-                    border-radius: none !important;
+                    border-radius: 0px !important;
                     margin-top: -15px;
                     background: $white !important;
 
@@ -296,7 +296,7 @@
             }
 
             .navbar-toggler:focus {
-                box-shadow: 0;
+                box-shadow: none;
             }
         }
 
@@ -317,7 +317,7 @@
 
                 .dropdown-menu {
                     border-top: 3px solid $secondery-color !important;
-                    border-radius: none !important;
+                    border-radius: 0px !important;
                     margin-top: -15px;
                     background: $white !important;
 
