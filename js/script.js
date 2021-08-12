@@ -68,9 +68,9 @@ $(window).scroll(function () {
 
      
 
-  var filterizd = $('.filtr-container').filterizr({
-       // options here
-    });
+  // var filterizd = $('.filtr-container').filterizr({
+  //      // options here
+  //   });
     if ($('').filterizr) {
       $('.filtr-container').filterizr();
     }
