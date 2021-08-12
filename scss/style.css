@@ -927,7 +927,8 @@ footer {
     padding: 80px 10px 0px 10px;
     margin-top: 100px; }
     .experiences .experiences-item {
-      z-index: 2; }
+      z-index: 2;
+      padding: 0 15px; }
       .experiences .experiences-item::after {
         height: calc(100% + 20px);
         top: -77px;
@@ -965,7 +966,8 @@ footer {
     padding: 80px 10px 0px 10px;
     margin-top: 100px; }
     .experiences .experiences-item {
-      z-index: 2; }
+      z-index: 2;
+      padding: 0 40px; }
       .experiences .experiences-item::after {
         height: calc(100% + 20px);
         top: -80px;
@@ -996,13 +998,15 @@ footer {
   .experiences {
     padding: 80px 10px 50px 10px;
     margin-top: 100px; }
-    .experiences .experiences-item::after {
-      top: -20px;
-      left: calc(50% - 1px);
-      height: calc(100% + 15px); }
-    .experiences .experiences-item::before {
-      left: calc(50% - 11px);
-      top: -30px; }
+    .experiences .experiences-item {
+      padding: 0 30px; }
+      .experiences .experiences-item::after {
+        top: -20px;
+        left: calc(50% - 1px);
+        height: calc(100% + 15px); }
+      .experiences .experiences-item::before {
+        left: calc(50% - 11px);
+        top: -30px; }
     .experiences .block {
       width: 48%;
       margin-bottom: 30px; }

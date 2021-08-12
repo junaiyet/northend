@@ -134,7 +134,7 @@
             background-color: #e8505b;
             border-radius: 50px;
             z-index: 2;
-            
+
         }
 
 
@@ -199,6 +199,7 @@
 
         .experiences-item {
             z-index: 2;
+            padding: 0 15px;
 
             &::after {
                 height: calc(100% + 20px);
@@ -263,6 +264,8 @@
         .experiences-item {
             z-index: 2;
 
+            padding: 0 40px;
+
             &::after {
                 height: calc(100% + 20px);
                 top: -80px;
@@ -313,6 +316,9 @@
         margin-top: 100px;
 
         .experiences-item {
+
+            padding: 0 30px;
+
             &::after {
                 top: -20px;
                 left: calc(50% - 1px);
