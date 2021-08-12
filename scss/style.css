@@ -1220,5 +1220,13 @@ textarea.form-control {
     margin-right: -1px;
     padding-right: 1px;
     font-size: 13px; } }
+.creative-banner {
+  background-image: url(/source/images/home-creative-banner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 220px 0 0px; }
+  .creative-banner h1 {
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
