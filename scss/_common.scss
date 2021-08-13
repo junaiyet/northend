@@ -31,11 +31,8 @@ button {
     }
 }
 
-.title {
-    h3 {
-        font-weight: 700;
+.title-border {
         position: relative;
-
         &::after {
             content: "";
             position: absolute;
@@ -45,7 +42,6 @@ button {
             height: 1px;
             background: $tertiary-color;
         }
-    }
 }
 
 
