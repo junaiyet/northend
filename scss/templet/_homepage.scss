@@ -307,46 +307,48 @@ h1 {
 // ////////////////
 
 
-
-.card {
-    transition: .4s;
-    border: 1px solid transparent !important;
-
-
-    .card-body {
-        padding: 21px 0;
-
-        i {
-            color: $secondery-color;
-            padding-bottom: 15px;
-            font-size: 32px;
-
-            &:last-child {
-                font-size: 15px;
-                padding-bottom: 0;
+.catagorys{
+    .card {
+        transition: .4s;
+        border: 1px solid transparent !important;
+    
+    
+        .card-body {
+            padding: 21px 0;
+    
+            i {
+                color: $secondery-color;
+                padding-bottom: 15px;
+                font-size: 32px;
+    
+                &:last-child {
+                    font-size: 15px;
+                    padding-bottom: 0;
+                }
             }
+    
+            a {
+                color: $tertiary-color;
+            }
+    
         }
-
-        a {
-            color: $tertiary-color;
+    
+        .last-item {
+            padding: 33px 0;
         }
-
-    }
-
-    .last-item {
-        padding: 33px 0;
-    }
-
-    &:hover i{
-        opacity: .7;
-    }
-    &:hover a{
-        color:  $secondery-color !important;
-    }
-    &:hover {
-        border: 1px solid $secondery-color !important;
+    
+        &:hover i{
+            opacity: .7;
+        }
+        &:hover a{
+            color:  $secondery-color !important;
+        }
+        &:hover {
+            border: 1px solid $secondery-color !important;
+        }
     }
 }
+
 
 
 
@@ -494,7 +496,6 @@ h1 {
 
             a {
                 display: inline-block;
-                // margin: 0 10px;
                 color: $tertiary-color;
                 transition: .4s;
                 width: 40px;
@@ -541,8 +542,8 @@ h1 {
 
             li a {
                 margin: 0 0px;
-                width: 25px;
-                height: 25px;
+                width: 35px;
+                height: 35px;
             }
         }
 

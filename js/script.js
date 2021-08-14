@@ -44,24 +44,15 @@ $('.hero-area-bottom-slider').slick({
 });
 $(window).scroll(function () {
   if ($(window).scrollTop() > 0) {
-    $(".menu").addClass("fixd-manu")
+    $(".navigation").addClass("fixd-manu")
   } else {
-    $(".menu").removeClass("fixd-manu")
+    $(".navigation").removeClass("fixd-manu")
   }
 })
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 0) {
-    $(".nav-bg").addClass("fixd")
-  } else {
-    $(".nav-bg").removeClass("fixd")
-  }
-});
+
 
   
-
-
-
     $(document).on('click','ul li', function(){
       $(this).addClass('active').siblings().removeClass('active')
     });

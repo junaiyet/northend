@@ -23,15 +23,15 @@
 }
 
 
-.card {
-    margin-bottom: 50px;
-    img{
-        width: 100%;
-    }
-}
+
 .filtr-container{
-    
     margin-left: 20px;
+    .card {
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    } 
 }   
 .card-body {
     box-shadow: 0 10px 30px rgba(68, 74, 102, .1) !important;
