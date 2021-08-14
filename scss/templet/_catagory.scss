@@ -33,14 +33,7 @@
             }
         }
     }
-    .stretched-link{
-        color: $tertiary-color;
-        display: inline-block;
-        transition: .4s;
-    &:hover{
-        color: $secondery-color;
-    }
-    }
+
 }
 @include mobile{
     .catagory ul li {

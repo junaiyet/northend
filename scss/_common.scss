@@ -56,3 +56,11 @@ section {
     padding-bottom: 80px !important;
     
 }
+.stretched-link{
+    color: $tertiary-color;
+    display: inline-block;
+    transition: .4s;
+&:hover{
+    color: $secondery-color;
+}
+}
