@@ -1207,7 +1207,7 @@ textarea.form-control {
     padding-right: 1px;
     font-size: 13px; } }
 .creative-banner {
-  background-image: url(/source/images/home-creative-banner.svg);
+  background-image: url(/images/home-creative-banner.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
