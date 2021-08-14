@@ -919,7 +919,7 @@ footer {
       z-index: 2;
       padding: 0 15px; }
       .experiences .experiences-item::after {
-        height: calc(100% + 20px);
+        height: calc(100% + 12px);
         top: -77px;
         z-index: -1; }
       .experiences .experiences-item::before {
@@ -938,7 +938,7 @@ footer {
         content: "";
         height: 22px;
         width: 22px;
-        bottom: -50px;
+        bottom: -35px;
         left: calc(50% - 10px);
         border: 4px solid #f5d6d9;
         background-color: #e8505b;
@@ -1196,11 +1196,12 @@ textarea.form-control {
       color: #E8505B; }
   .catagory ul li:last-child {
     border: 0; }
-.catagory h3 {
+.catagory .stretched-link {
+  color: #222222;
   display: inline-block;
   -webkit-transition: .4s;
   transition: .4s; }
-  .catagory h3:hover {
+  .catagory .stretched-link:hover {
     color: #E8505B; }
 
 @media (max-width: 575.98px) {

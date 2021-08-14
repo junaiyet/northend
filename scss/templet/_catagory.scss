@@ -33,7 +33,8 @@
             }
         }
     }
-    h3{
+    .stretched-link{
+        color: $tertiary-color;
         display: inline-block;
         transition: .4s;
     &:hover{
