@@ -187,7 +187,7 @@ h6,
           background: #DEDBDC;
           position: absolute;
           left: -15px;
-          top: -1px;
+          top: -2px;
           content: ""; }
       .navigation .search-btn .btn:focus {
         -webkit-box-shadow: none;
