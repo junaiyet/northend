@@ -1061,7 +1061,8 @@ footer {
     padding: 80px 70px 30px 70px; } }
 .tools-list {
   -webkit-transition: .4s;
-  transition: .4s; }
+  transition: .4s;
+  top: 110px; }
   .tools-list .list {
     display: block;
     padding: 12px 20px;
@@ -1074,9 +1075,6 @@ footer {
   .tools-list .active {
     background: #E8505B;
     color: #fff; }
-
-.tool {
-  width: 40% !important; }
 
 .filtr-container {
   margin-left: 20px; }

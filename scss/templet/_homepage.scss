@@ -1,3 +1,4 @@
+// hero-area 
 .hero-area {
     background-color: $primary-color !important;
     background: url(../images/banner.png) center no-repeat;
@@ -26,12 +27,13 @@ h1 {
 }
 
 @include mobile {
-    .hero-area{
-        img{
+    .hero-area {
+        img {
             display: block;
             margin: 0 auto;
         }
     }
+
     h1 {
         text-align: center;
         margin-top: 30px;
@@ -43,12 +45,13 @@ h1 {
 }
 
 @include tablet {
-    .hero-area{
-        img{
+    .hero-area {
+        img {
             display: block;
             margin: 0 auto;
         }
     }
+
     h1 {
         margin-top: 30px;
 
@@ -66,7 +69,7 @@ h1 {
     }
 }
 
-// /////
+// /////hero-area-bottom
 .hero-area-bottom {
     margin-top: -175px;
 }
@@ -317,45 +320,47 @@ h1 {
     }
 }
 
-// ////////////////
+// ////////////////catagorys
 
 
-.catagorys{
+.catagorys {
     .card {
         transition: .4s;
         border: 1px solid transparent !important;
-    
-    
+
+
         .card-body {
             padding: 21px 0;
-    
+
             i {
                 color: $secondery-color;
                 padding-bottom: 15px;
                 font-size: 32px;
-    
+
                 &:last-child {
                     font-size: 15px;
                     padding-bottom: 0;
                 }
             }
-    
+
             a {
                 color: $tertiary-color;
             }
-    
+
         }
-    
+
         .last-item {
             padding: 33px 0;
         }
-    
-        &:hover i{
+
+        &:hover i {
             opacity: .7;
         }
-        &:hover a{
-            color:  $secondery-color !important;
+
+        &:hover a {
+            color: $secondery-color !important;
         }
+
         &:hover {
             border: 1px solid $secondery-color !important;
         }
@@ -366,7 +371,7 @@ h1 {
 
 
 
-// ////
+// //// recent-news
 #recent-news {
     padding-bottom: 120px;
 }
@@ -474,7 +479,7 @@ h1 {
 
 }
 
-// //////
+// //////pagination
 .pagination {
     .prevnext {
         width: 100px;
@@ -561,13 +566,15 @@ h1 {
     }
 }
 
-// ///
+// /// footer
 footer {
     background-color: $primary-color !important;
-    .footer-logo{
+
+    .footer-logo {
         display: inline-block;
         margin-bottom: 10px;
     }
+
     .links {
         li {
             a {
