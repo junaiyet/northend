@@ -37,9 +37,6 @@ $('.hero-area-bottom-slider').slick({
 
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 $(window).scroll(function () {
@@ -48,6 +45,11 @@ $(window).scroll(function () {
   } else {
     $(".navigation").removeClass("fixd-manu")
   }
+  // if ($(window).scrollTop() > 50) {
+  //   $(".navbar-nav").addClass("fixd_manu")
+  // } else {
+  //   $(".navbar-nav").removeClass("fixd_manu")
+  // }
 })
 
 
@@ -65,32 +67,3 @@ $(window).scroll(function () {
     if ($('').filterizr) {
       $('.filtr-container').filterizr();
     }
-
-// ////////////////////
-// let dropdownBtn = document.querySelector('.menu-btn');
-// let menuContent = document.querySelector('.menu-content');
-// dropdownBtn.addEventListener('click',()=>{
-//    if(menuContent.style.display===""){
-//       menuContent.style.display="block";
-//    } else {
-//       menuContent.style.display="";
-//    }
-// })
-
-// $(document).ready(function(){
-//   $('.list').click(function(){
-//     const value = $(this).attr('data-filter');
-//     if (value == 'all'){
-//       $('.gallery').show('1000')
-//     }
-//     else{
-//       $('.gallery').not('.'+value).hide('1000')
-//       $('.gallery').filter('.'+value).show('1000')
-
-//     }
-//   })
-//   // active
-//   $('.list').click(function(){
-//     $(this).addClass('active').siblings().removeClass('active')
-//   })
-// })

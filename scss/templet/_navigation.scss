@@ -160,6 +160,16 @@
 }
 
 @include mobile {
+    // .fixd_manu ul{
+    //    overflow-y:scroll;
+    
+    // }
+    .fixd-manu ul li {
+        margin-top: -5px !important;
+        margin-bottom: 0px !important;
+    
+    }
+    
     .navigation {
         .navber {
             padding: 20px 0 !important;
@@ -179,7 +189,7 @@
             background: $primary-color !important;
             text-align: center;
             padding-top: 0px;
-            padding-bottom: 60px;
+            padding-bottom: 15px;
             margin-top: 30px;
 
             li {
@@ -194,7 +204,7 @@
 
         .from-area {
             position: relative;
-            top: -80px;
+            top: -30px;
             display: flex;
             justify-content: center;
             align-content: center;
@@ -237,7 +247,7 @@
             background: $primary-color !important;
             text-align: center;
             padding-top: 0px;
-            padding-bottom: 65px;
+            padding-bottom: 20px;
             margin-top: 30px;
 
             li {
@@ -268,7 +278,7 @@
 
         .from-area {
             position: relative;
-            top: -80px;
+            top: -35px;
             display: flex;
             justify-content: center;
             align-content: center;

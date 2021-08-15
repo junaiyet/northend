@@ -36,18 +36,20 @@ button {
         &::after {
             content: "";
             position: absolute;
-            bottom: -15px;
+            bottom: 0px;
             left: 0;
             width: 70px;
             height: 1px;
             background: $tertiary-color;
+            margin-bottom: 30px;
+
         }
 }
 
 
 
 section {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
     
 }
 
@@ -55,12 +57,4 @@ section {
     padding-top: 120px !important;
     padding-bottom: 80px !important;
     
-}
-.stretched-link{
-    color: $tertiary-color;
-    display: inline-block;
-    transition: .4s;
-&:hover{
-    color: $secondery-color;
-}
 }
