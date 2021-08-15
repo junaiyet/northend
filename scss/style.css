@@ -257,42 +257,44 @@ h6,
     margin-top: -5px !important;
     margin-bottom: 0px !important; }
 
-  .navigation .navber {
-    padding: 20px 0 !important; }
-    .navigation .navber .navbar-toggler i {
-      margin-top: 10px !important; }
-    .navigation .navber .navbar-toggler:focus {
-      -webkit-box-shadow: none;
-              box-shadow: none; }
-  .navigation ul {
-    background: #F6F6F6 !important;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 15px;
-    margin-top: 30px; }
-    .navigation ul li {
-      margin-top: 0;
-      margin-bottom: 0; }
-      .navigation ul li a {
-        padding: 0px 0px 30px 0 !important; }
-  .navigation .from-area {
-    position: relative;
-    top: -30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center; }
-  .navigation .dropdown-menu {
-    border-top: 3px solid #E8505B !important;
-    border-radius: 0px !important;
-    margin-top: -15px;
-    background: #fff !important; }
-    .navigation .dropdown-menu li a {
-      padding: 0 0 15px 0 !important; } }
+  .navigation {
+    overflow-y: scroll; }
+    .navigation .navber {
+      padding: 20px 0 !important; }
+      .navigation .navber .navbar-toggler i {
+        margin-top: 10px !important; }
+      .navigation .navber .navbar-toggler:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+    .navigation ul {
+      background: #F6F6F6 !important;
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 15px;
+      margin-top: 30px; }
+      .navigation ul li {
+        margin-top: 0;
+        margin-bottom: 0; }
+        .navigation ul li a {
+          padding: 0px 0px 30px 0 !important; }
+    .navigation .from-area {
+      position: relative;
+      top: -30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+    .navigation .dropdown-menu {
+      border-top: 3px solid #E8505B !important;
+      border-radius: 0px !important;
+      margin-top: -15px;
+      background: #fff !important; }
+      .navigation .dropdown-menu li a {
+        padding: 0 0 15px 0 !important; } }
 @media (min-width: 576px) and (max-width: 768px) {
   .navigation .navber {
     padding: 20px 0 !important; }
