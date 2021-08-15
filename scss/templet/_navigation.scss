@@ -18,48 +18,48 @@
     z-index: 9999;
     transition: .4s;
 
-    .search-btn {
-        position: relative;
+    // .search-btn {
+    //     position: relative;
 
-        .form-control {
-            width: 280px;
-            border: 2px solid $border-color;
-            border-radius: 0rem;
-            // transition: border-color 0, box-shadow 0;
-            height: 42px;
-            color: $input-text-color;
+    //     .form-control {
+    //         width: 280px;
+    //         border: 2px solid $border-color;
+    //         border-radius: 0rem;
+    //         // transition: border-color 0, box-shadow 0;
+    //         height: 42px;
+    //         color: $input-text-color;
 
-            &:focus {
-                box-shadow: none;
-            }
-        }
+    //         &:focus {
+    //             box-shadow: none;
+    //         }
+    //     }
 
-        .btn {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
+    //     .btn {
+    //         position: absolute;
+    //         top: 50%;
+    //         right: 10px;
+    //         transform: translateY(-50%);
 
-            i {
-                font-size: 15px;
-                position: relative;
+    //         i {
+    //             font-size: 15px;
+    //             position: relative;
 
-                &::after {
-                    width: 0.5px;
-                    height: 18px;
-                    background: $border-color;
-                    position: absolute;
-                    left: -15px;
-                    top: -2px;
-                    content: "";
-                }
-            }
+    //             &::after {
+    //                 width: 0.5px;
+    //                 height: 18px;
+    //                 background: $border-color;
+    //                 position: absolute;
+    //                 left: -15px;
+    //                 top: -2px;
+    //                 content: "";
+    //             }
+    //         }
 
-            &:focus {
-                box-shadow: none;
-            }
-        }
-    }
+    //         &:focus {
+    //             box-shadow: none;
+    //         }
+    //     }
+    // }
 
     ul {
 
@@ -128,6 +128,35 @@
         }
     }
 
+    .from-area {
+        position: relative;
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateY(2px);
+            i {
+                font-size: 15px;
+                position: relative;
+
+                &::after {
+                    width: 0.5px;
+                    height: 18px;
+                    background: $border-color;
+                    position: absolute;
+                    left: -15px;
+                    top: -2px;
+                    content: "";
+                }
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
     select {
         margin-top: 11px;
         margin-left: 15px !important;
@@ -161,8 +190,8 @@
 }
 
 @include mobile {
-    .fixd-manu {
-        display: block;
+    .fixd-manu ul {
+        padding-bottom: 10px !important;
     }
 
     .fixd-manu ul li {
@@ -192,7 +221,7 @@
             background: $primary-color !important;
             text-align: center;
             padding-top: 0px;
-            // padding-bottom: 60px;
+            padding-bottom: 20px;
             margin-top: 30px;
             overflow-y: auto;
             max-height: 70vh;
@@ -205,14 +234,6 @@
                     padding: 0px 0px 30px 0 !important;
                 }
             }
-        }
-
-        .from-area {
-            position: relative;
-            top: -75px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
         }
 
         .dropdown-menu {
@@ -233,6 +254,9 @@
 }
 
 @include tablet {
+    .fixd-manu ul {
+        padding-bottom: 10px !important;
+    }
     .fixd-manu ul li {
         margin-top: -5px !important;
         margin-bottom: 0px !important;
@@ -258,8 +282,10 @@
             background: $primary-color !important;
             text-align: center;
             padding-top: 0px;
-            padding-bottom: 20px;
+            padding-bottom: 60px;
             margin-top: 30px;
+            overflow-y: auto;
+            max-height: 70vh;
 
             li {
                 margin-top: 0;
@@ -287,17 +313,14 @@
             }
         }
 
-        .from-area {
-            position: relative;
-            top: -35px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-        }
+
     }
 }
 
 @include desktop {
+    .fixd-manu ul {
+        padding-bottom: 30px !important;
+    }
     .navbar-collapse {
         height: 60vh;
     }
@@ -336,6 +359,8 @@
             padding-top: 0px;
             padding-bottom: 60px;
             margin-top: 0px;
+            overflow-y: auto;
+            max-height: 70vh;
 
             li {
                 margin-top: 0;
@@ -359,14 +384,6 @@
                     }
                 }
             }
-        }
-
-        .from-area {
-            position: relative;
-            top: -80px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
         }
     }
 }
