@@ -77,6 +77,7 @@ h1 {
         display: block;
     }
 }
+
 // .slider-item:not(:last-child) {
 //     margin: 0 15px;
 // }
@@ -139,7 +140,6 @@ h1 {
 
     ul {
         li {
-            margin-top: 30px;
             margin-right: 6px;
             display: inline-block;
             padding-right: 10px;
@@ -343,47 +343,47 @@ h1 {
 // ////////////////catagorys
 
 
-.catagorys {
+.categorys {
     .card {
+        
         transition: .4s;
-        border: 1px solid transparent !important;
+        
+        a {
+            border: 1px solid transparent !important;
 
-
-        .card-body {
+            display: inline-block;
+            box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.122);
+            transition: .4s;
             padding: 21px 0;
-
-            i {
-                color: $secondery-color;
-                padding-bottom: 15px;
-                font-size: 32px;
-
-                &:last-child {
-                    font-size: 15px;
-                    padding-bottom: 0;
-                }
-            }
-
-            a {
-                color: $tertiary-color;
-            }
-
+            
         }
 
-        .last-item {
-            padding: 33px 0;
+        h4 {
+            margin-bottom: 0;
+        }
+
+        i {
+            color: $secondery-color;
+            padding-bottom: 15px;
+            font-size: 32px;
+            &:last-child{
+                padding-top: 15px;
+                font-size: 18px;
+            }
+        }
+
+        &:hover a h4 {
+            color: $secondery-color !important;
         }
 
         &:hover i {
             opacity: .7;
         }
 
-        &:hover a {
-            color: $secondery-color !important;
+        &:hover a{
+            border: 1px solid red !important;
         }
-
-        &:hover {
-            border: 1px solid $secondery-color !important;
-        }
+      
     }
 }
 
@@ -622,8 +622,10 @@ footer {
     }
 
     .socal-icon {
+        .list-inline-item:not(:last-child) {
+            margin-right: 15px;
+        }
         li {
-            margin-left: 15px !important;
 
             a {
                 display: inline-block;
