@@ -1113,6 +1113,9 @@ footer {
 
   .filtr-container {
     margin-left: 10px; } }
+#figma {
+  top: 100px; }
+
 #what-is-figma {
   font-size: 40px !important;
   line-height: 3;
@@ -1179,7 +1182,15 @@ textarea.form-control {
 
 @media (max-width: 575.98px) {
   .contact svg {
+    margin-top: -100px; }
+
+  .contact-us {
+    padding-top: 0;
     margin-top: -100px; } }
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-us {
+    padding-top: 0px;
+    margin-top: -30px; } }
 .catagory h2 {
   font-size: 40px;
   font-weight: 700; }
