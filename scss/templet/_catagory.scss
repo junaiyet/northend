@@ -43,9 +43,15 @@
 
 }
 @include mobile{
-    .catagory ul li {
-        margin-right: -1px;
-        padding-right: 1px;
-        font-size: 13px;
-    }
+    .catagory{
+        h2{
+            font-size: 30px;
+
+        }
+        ul li {
+            margin-right: -1px;
+            padding-right: 1px;
+            font-size: 13px;
+        }
+    } 
 }

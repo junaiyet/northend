@@ -18,49 +18,6 @@
     z-index: 9999;
     transition: .4s;
 
-    // .search-btn {
-    //     position: relative;
-
-    //     .form-control {
-    //         width: 280px;
-    //         border: 2px solid $border-color;
-    //         border-radius: 0rem;
-    //         // transition: border-color 0, box-shadow 0;
-    //         height: 42px;
-    //         color: $input-text-color;
-
-    //         &:focus {
-    //             box-shadow: none;
-    //         }
-    //     }
-
-    //     .btn {
-    //         position: absolute;
-    //         top: 50%;
-    //         right: 10px;
-    //         transform: translateY(-50%);
-
-    //         i {
-    //             font-size: 15px;
-    //             position: relative;
-
-    //             &::after {
-    //                 width: 0.5px;
-    //                 height: 18px;
-    //                 background: $border-color;
-    //                 position: absolute;
-    //                 left: -15px;
-    //                 top: -2px;
-    //                 content: "";
-    //             }
-    //         }
-
-    //         &:focus {
-    //             box-shadow: none;
-    //         }
-    //     }
-    // }
-
     ul {
 
         li {
@@ -320,9 +277,6 @@
 @include desktop {
     .fixd-manu ul {
         padding-bottom: 30px !important;
-    }
-    .navbar-collapse {
-        height: 60vh;
     }
 
     .fixd-manu ul li {
