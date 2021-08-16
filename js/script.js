@@ -1,6 +1,7 @@
 $('.hero-area-bottom-slider').slick({
   dots: false,
   infinite: true,
+  autoplay:true,
   arrows: true,
   prevArrow: '<i class="fas fa-arrow-left left-arrow"></i>',
   nextArrow: '<i class="fas fa-arrow-right right-arrow"></i>',
@@ -45,11 +46,7 @@ $(window).scroll(function () {
   } else {
     $(".navigation").removeClass("fixd-manu")
   }
-  // if ($(window).scrollTop() > 50) {
-  //   $(".navbar-nav").addClass("fixd_manu")
-  // } else {
-  //   $(".navbar-nav").removeClass("fixd_manu")
-  // }
+
 })
 
 
