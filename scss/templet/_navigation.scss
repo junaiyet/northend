@@ -147,6 +147,9 @@
 }
 
 @include mobile {
+    .fixd-manu{
+        display: none;
+    }
     .fixd-manu ul {
         padding-bottom: 10px !important;
     }
@@ -211,6 +214,7 @@
 }
 
 @include tablet {
+   
     .fixd-manu ul {
         padding-bottom: 10px !important;
     }

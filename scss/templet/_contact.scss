@@ -1,7 +1,7 @@
 .contact {
     padding-top: 80px !important;
 
-    .btn-danger{
+    .btn-danger {
         line-height: 2.2;
     }
 
@@ -39,24 +39,29 @@ textarea.form-control {
     background-color: $secondery-color;
     border-color: $secondery-color;
 }
-.btn-check:focus+.btn, .btn:focus {
-    box-shadow:none;
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none;
 }
-.btn-check:active+.btn-danger:focus, .btn-check:checked+.btn-danger:focus, .btn-danger.active:focus, .btn-danger:active:focus, .show>.btn-danger.dropdown-toggle:focus {
-    box-shadow:none;
+
+.btn-check:active+.btn-danger:focus,
+.btn-check:checked+.btn-danger:focus,
+.btn-danger.active:focus,
+.btn-danger:active:focus,
+.show>.btn-danger.dropdown-toggle:focus {
+    box-shadow: none;
 }
+
 @include mobile {
     .contact svg {
-        margin-top: -100px;
-    }
-    .contact-us {
-        padding-top: 0;
-        margin-top: -100px;
+        height: 300px;
     }
 }
-@include tablet{
+
+@include tablet {
     .contact-us {
         padding-top: 0px;
-        margin-top: -30px;     
+        margin-top: -30px;
     }
 }
