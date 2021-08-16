@@ -9,11 +9,10 @@
 .fixd-manu ul li {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
-
 }
 
 .navigation {
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     z-index: 9999;
     transition: .4s;
@@ -147,21 +146,20 @@
 }
 
 @include mobile {
-    .fixd-manu{
-        display: none;
-    }
-    .fixd-manu ul {
-        padding-bottom: 10px !important;
-    }
 
-    .fixd-manu ul li {
-        margin-top: -5px !important;
-        margin-bottom: 0px !important;
+    // .fixd-manu ul {
+    //     padding-bottom: 10px !important;
+    // }
 
-    }
+    // .fixd-manu ul li {
+    //     margin-top: 0px !important;
+    //     margin-bottom: 0px !important;
+
+    // }
 
     .navigation {
         overflow-y: scroll;
+        position: fixed !important;
 
         .navber {
             padding: 20px 0 !important;
@@ -219,7 +217,7 @@
         padding-bottom: 10px !important;
     }
     .fixd-manu ul li {
-        margin-top: -5px !important;
+        margin-top: 0px !important;
         margin-bottom: 0px !important;
 
     }
@@ -284,10 +282,11 @@
     }
 
     .fixd-manu ul li {
-        margin-top: -5px !important;
+        margin-top: 0px !important;
         margin-bottom: 0px !important;
 
     }
+
 
     .navigation .navbar-toggler {
         margin-top: 15px;

@@ -1,13 +1,15 @@
 $('.hero-area-bottom-slider').slick({
   dots: false,
   infinite: true,
-  autoplay:true,
+  autoplay:false,
   arrows: true,
   prevArrow: '<i class="fas fa-arrow-left left-arrow"></i>',
   nextArrow: '<i class="fas fa-arrow-right right-arrow"></i>',
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
+  centerMode:true,
+  centerPadding:100,
   responsive: [{
       breakpoint: 991.98,
       settings: {
@@ -50,6 +52,10 @@ $(window).scroll(function () {
 })
 
 
+
+setTimeout(function(){
+    $(".preloder-bg").fadeOut()
+},3000)
 
   
     $(document).on('click','ul li', function(){
