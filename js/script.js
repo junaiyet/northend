@@ -58,9 +58,6 @@ setTimeout(function(){
 },3000)
 
   
-    $(document).on('click','ul li', function(){
-      $(this).addClass('active').siblings().removeClass('active')
-    });
 
      
 
@@ -70,3 +67,6 @@ setTimeout(function(){
     if ($('').filterizr) {
       $('.filtr-container').filterizr();
     }
+    $(document).on('click','ul li', function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    });
