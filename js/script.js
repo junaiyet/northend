@@ -24,7 +24,8 @@ $('.hero-area-bottom-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        autoplay:true,
+        dots: false,
         arrows: false,
 
 
@@ -35,7 +36,8 @@ $('.hero-area-bottom-slider').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        autoplay:true,
+        dots: false,
         arrows: false,
 
       }

@@ -154,7 +154,7 @@ h1 {
 // }
 .left-arrow {
     position: absolute;
-    left: -50px;
+    left: -45px;
     top: 39%;
     transform: translateY(-50%);
     z-index: 9;
@@ -177,7 +177,7 @@ h1 {
 
 .right-arrow {
     position: absolute;
-    right: -50px;
+    right: -45px;
     top: 39%;
     transform: translateY(-50%);
     z-index: 9;
@@ -214,57 +214,57 @@ h1 {
         }
     }
 
-    .slick-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+    // .slick-dots {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
 
-        li {
-            display: inline-block;
-            margin-right: 10px;
+    //     li {
+    //         display: inline-block;
+    //         margin-right: 10px;
 
-            button {
-                font-size: 0;
-                border: 1px solid $secondery-color !important;
-                background: transparent;
-                width: 14px;
-                height: 14px;
-                border-radius: 50%;
-                border: 0;
-            }
-        }
+    //         button {
+    //             font-size: 0;
+    //             border: 1px solid $secondery-color !important;
+    //             background: transparent;
+    //             width: 14px;
+    //             height: 14px;
+    //             border-radius: 50%;
+    //             border: 0;
+    //         }
+    //     }
 
-        .slick-active button {
-            background: $secondery-color;
-        }
-    }
+    //     .slick-active button {
+    //         background: $secondery-color;
+    //     }
+    // }
 }
 
 @include tablet {
-    .slick-dots {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+    // .slick-dots {
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translateX(-50%);
 
-        li {
-            display: inline-block;
-            margin-right: 10px;
+    //     li {
+    //         display: inline-block;
+    //         margin-right: 10px;
 
-            button {
-                font-size: 0;
-                border: 1px solid $secondery-color !important;
-                background: transparent;
-                width: 14px;
-                height: 14px;
-                border-radius: 50%;
-                border: 0;
-            }
-        }
+    //         button {
+    //             font-size: 0;
+    //             border: 1px solid $secondery-color !important;
+    //             background: transparent;
+    //             width: 14px;
+    //             height: 14px;
+    //             border-radius: 50%;
+    //             border: 0;
+    //         }
+    //     }
 
-        .slick-active button {
-            background: $secondery-color;
-        }
-    }
+    //     .slick-active button {
+    //         background: $secondery-color;
+    //     }
+    // }
 }
 
 @include desktop {
@@ -276,6 +276,7 @@ h1 {
         height: 30px;
         text-align: center;
         line-height: 30px;
+        border: none;
     }
 
     .right-arrow {
@@ -286,6 +287,8 @@ h1 {
         height: 30px;
         text-align: center;
         line-height: 30px;
+        border: none;
+
     }
 
     .text {
@@ -302,22 +305,24 @@ h1 {
 
 @include desktop-lg {
     .left-arrow {
-        left: -22px !important;
+        left: -10px !important;
         font-size: 13px;
         width: 30px;
         height: 30px;
         text-align: center;
         line-height: 30px;
+        border: none;
 
     }
 
     .right-arrow {
-        right: -22px !important;
+        right: -10px !important;
         font-size: 13px;
         width: 30px;
         height: 30px;
         text-align: center;
         line-height: 30px;
+        border: none;
     }
 
     .text {
@@ -581,6 +586,8 @@ h1 {
 
 @include mobile {
     .pagination {
+        .prevnext {
+            padding: 0px 5px;}
         .h5 {
             font-size: 15px !important;
         }
@@ -591,8 +598,8 @@ h1 {
 
             li a {
                 margin: 0 0px;
-                width: 35px;
-                height: 35px;
+                width: 25px;
+                height: 25px;
             }
         }
 
@@ -602,7 +609,7 @@ h1 {
 
 @include tablet {
     .pagination ul li a {
-        margin: 0 5px;
+        margin: 0 4px;
     }
 }
 
