@@ -1599,6 +1599,8 @@ textarea.form-control {
   .contact-us {
     padding-top: 0px;
     margin-top: -30px; } }
+.catagory .border-bottom:last-child {
+  border-bottom: none !important; }
 .catagory h2 {
   font-size: 40px;
   font-weight: 700; }

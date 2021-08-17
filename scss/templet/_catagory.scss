@@ -1,4 +1,9 @@
 .catagory{
+    .border-bottom{
+        &:last-child{
+            border-bottom: none !important;
+        }
+    }
     h2{
         font-size: 40px;
         font-weight: 700;
