@@ -313,6 +313,9 @@
 }
 
 @include desktop {
+    .experiences .block span {
+        bottom: 10px;
+    }
     .experiences {
         padding: 80px 10px 50px 10px;
         margin-top: 100px;
@@ -332,7 +335,7 @@
                 top: -30px;
             }
         }
-
+    
         .block {
             width: 48%;
             margin-bottom: 30px;
