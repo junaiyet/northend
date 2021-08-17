@@ -1,7 +1,7 @@
 $('.hero-area-bottom-slider').slick({
   dots: false,
   infinite: true,
-  autoplay:false,
+  autoplay:true,
   arrows: true,
   prevArrow: '<i class="fas fa-arrow-left left-arrow"></i>',
   nextArrow: '<i class="fas fa-arrow-right right-arrow"></i>',
