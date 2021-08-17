@@ -645,6 +645,13 @@ h6,
     background-color: transparent; }
 
 @media (max-width: 575.98px) {
+  .fixd-manu ul {
+    padding-bottom: 10px !important; }
+
+  .fixd-manu ul li {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; }
+
   .navigation {
     overflow-y: scroll;
     position: fixed !important; }
